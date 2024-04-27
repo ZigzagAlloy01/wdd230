@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Poppins:wght@200&display=swap');
+
+:root {
+    --primary-color: #0B3C49;
+  
+    --secondary-color: #731963;
+  
+    --accent1-color: #FFFDFD;
+  
+    --accent2-color: #CBD2D0;
+  
+    --heading-font: 'Poppins', sans-serif;
+  
+    --paragraph-font: 'Manrope',sans-serif;
+  
+    --headline-color-on-white: #0B3C49;  /* headlines on a white background */ 
+  
+    --headline-color-on-color: #FFFDFD; /* headlines on a colored background */ 
+  
+    --paragraph-color-on-white: #CBD2D0; /* paragraph text on a white background */ 
+  
+    --paragraph-color-on-color: #0B3C49; /* paragraph text on a colored background */ 
+  
+    --paragraph-background-color: #396E94  ;
+  
+    --nav-link-color: #731963;
+  
+    --nav-background-color: rgb(30, 30, 134);
+  
+    --nav-hover-link-color: #FFFDFD;
+  
+    --nav-hover-background-color: #731963;
+  
+  }
+  
+  * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+  }
+  
+  header,
+  nav,
+  main,
+  footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: var(--heading-font);
+  }
+  
+  header, nav, a {
+      color: white;
+      padding: 1rem 1rem 1rem 1rem;
+  }
+
+  header, h2 {
+    background-color: var(--nav-background-color);
+    font-size: 2.5rem;
+  }
+
+  footer {
+    display: grid;
+    grid-auto-flow: row;
+    background-color: var(--nav-background-color);
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 2rem 0 3rem 0;
+    color: white;
+  }
+
+  h1 {
+    font-family: var(--heading-font);
+    margin: 2rem 5rem 2rem 2rem;
+    text-align: center;
+  }
+
+  section {
+    border: solid 0.1rem black;
+    color: white;
+    margin-bottom: 3rem;
+    box-shadow: 0.6rem 0.6rem 0.6rem rgba(0, 0, 0, 0.3);
+  }
+
+  .card-activities {
+    grid-auto-flow: column;
+    margin-left: 7rem;
+  }
+
+  .card-information {
+    grid-auto-flow: column;
+    margin-right: 7rem;
+    margin-left: 7rem;
+  }
+
+  .card-activities h2, .card-information h2 {
+    padding: 1rem 1rem 1rem 1.5rem;
+  }
+
+  .card-activities ul, .card-information ul {
+    display: grid;
+    grid-auto-flow: row;
+    text-align: center;
+    margin-top: 3rem;
+    color: black;
+  }
+
+  .card-activities li, .card-information li {
+    margin-bottom: 1.5rem;
+  }
+
+  .card-activities a, .card-information a {
+    color: black;
+  }
+
+  span {
+    font-weight: bold;
+  }
+
+  ul li {
+      display:inline-block;
+      margin:  0rem 0.5rem 0rem 0.5rem;
+  }
+  ul li a{
+    text-decoration: none;
+    transition: color 1.5s ease;
+  }
+
+  li a:hover {
+    background-color:  orange;
+  }
+
+  main {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem
+  }
+  
+  
+  img {
+      width: 10rem;
+      height: 10rem;
+      margin: 1rem 3rem 1rem 2rem;
+      border-radius: 2rem;
+  }
+  
+  nav {
+      background-color: black;
+      font-size: 2rem;
+  }
+
+  @media (max-width: 1075px) {
+    .card-activities a, .card-information a {
+        display: grid;
+        grid-auto-flow: column;
+      }
+  }
+  
+  @media (max-width: 768px) {
+    main {
+      grid-template-columns: 1fr;
+    }
+    header, h2, .card-activities, .card-information {
+        font-size: 2rem;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    nav, span {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    img {
+        width: 7rem;
+        height: 7rem;
+        margin: 1rem 1rem 1rem 1rem;
+        border-radius: 2rem;
+    }
+    ul li {
+        display: flex;
+        flex-wrap: wrap;
+        margin:  0rem 1.2rem 0rem 1.2rem;
+    }
+  }
+
+  
