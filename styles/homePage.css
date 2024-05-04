@@ -71,8 +71,8 @@
 
   h1 {
     font-family: var(--heading-font);
-    margin: 2rem 5rem 2rem 2rem;
     text-align: center;
+    padding-top: 2rem;
   }
 
   section {
@@ -85,12 +85,12 @@
   .card-activities {
     grid-auto-flow: column;
     margin-left: 7rem;
+    margin-top: 4rem;
   }
 
   .card-information {
     grid-auto-flow: column;
-    margin-right: 7rem;
-    margin-left: 7rem;
+    margin: -11rem 7rem 0 7rem;
   }
 
   .card-activities h2, .card-information h2 {
@@ -148,6 +148,15 @@
       background-color: black;
       font-size: 2rem;
   }
+  
+  #mode {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    cursor: pointer;
+    font-size: 2rem;
+  }
 
   @media (max-width: 1075px) {
     .card-activities a, .card-information a {
@@ -182,5 +191,3 @@
         margin:  0rem 1.2rem 0rem 1.2rem;
     }
   }
-
-  
