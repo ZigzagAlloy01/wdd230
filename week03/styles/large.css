@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Poppins:wght@200&display=swap');
+
+:root {
+    --primary-color: #00A;
+  
+    --secondary-color: #FFFFFF;
+
+    --header-background-color: #243b58;
+
+    --navigation-background-color: #552568;
+
+    --header-size: 1.5rem;
+
+    --footer-size: 2.5rem;
+  
+    --heading-font: 'Poppins', sans-serif;
+  
+    --paragraph-font: 'Manrope',sans-serif;
+  
+    --nav-hover-background-color: #b81b0a;
+
+    --div-background-color: #7a89cc;
+  }
+
+    @media (min-width: 47rem) {
+
+        #chamber-logo {
+            width: 5rem;
+            height: 5rem;
+            margin: 0 1rem 0 1rem;
+        }
+
+        h1 {
+        font-size: 2.5rem;
+        margin-left: 0;
+        text-align: center;
+        }
+    
+        h2 {
+        font-size: 2rem;
+        text-align: center;
+        }
+    
+        #menu, .navigation {
+        display: none; 
+        }
+    
+        .navigation {
+            display: none;
+        }
+
+        .navigation-largesize {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            color: #fff;
+            font-size: 0.9rem;
+            margin: 0 1rem 0 1rem;
+        }
+        
+        .navigation-largesize a {
+            display: block;
+            flex: 1 1 100%;
+            padding: 0.5rem;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+        }
+        .navigation-largesize a:hover {
+            background-color: var(--nav-hover-background-color);
+            font-weight: 700;
+        }
+        #background-image {
+            margin: 0;
+            max-width: 100%;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+        }
+        #background-section {
+            position: relative;
+            max-width: 80%;
+        }
+        #background-image {
+            margin: 0;
+            max-width: 100%;
+        }
+        #join {
+            position: absolute;
+            top: 25%;
+            left: 25%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-weight: bolder;
+            font-size: 1.5rem;
+            padding: 1rem 1rem 1rem 1rem;
+            background-color: var(--primary-color);
+            border-radius: 25%;
+            box-shadow: 0.4rem 0.4rem 0.6rem rgba(0.2, 0.2, 0.2, 0.5);
+        }
+        .line {
+            border-top: 0.125rem solid black;
+            width: 90%;
+            margin: 1rem 0rem 1rem 0rem;
+        }
+        .events, .weather, .bioinformatics, .materials, .vaccines {
+            font-size: 1rem;
+        }
+        #main-content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            max-width: 60%;
+            justify-content: center;
+        }
+        .weather {
+            margin-top: -15rem;
+          }
+
+    }
+
+    @media (min-width: 64rem) {
+        header {
+            font-size: 2.2rem;
+        }
+        #chamber-logo {
+            width: 6rem;
+            height: 6rem;
+            margin: 0 1.5rem 0 2rem;
+        }
+        .navigation-largesize {
+            margin: 0 2rem 0 9rem;
+            font-size: 1.5rem;
+        }
+        #social-media-logos {
+            flex-direction: row;
+        }
+        #facebook-logo, #instagram-logo {
+            border-radius: 4rem;
+            width: 3rem;
+            height: 3rem;
+            margin: 1rem 1rem 0 1rem;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+        }
+        #background-section {
+            position: relative;
+            max-width: 80%;
+        }
+        #background-image {
+            margin: 0;
+            max-width: 100%;
+        }
+        #join {
+            position: absolute;
+            top: 20%;
+            left: 20%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-weight: bolder;
+            font-size: 2rem;
+            padding: 1rem 1rem 1rem 1rem;
+            background-color: var(--primary-color);
+            border-radius: 25%;
+            box-shadow: 0.4rem 0.4rem 0.6rem rgba(0.2, 0.2, 0.2, 0.5);
+        }
+        #main-content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            max-width: 60%;
+            width: 200rem;
+        }
+
+        .footer-topline, .footer-bottomline {
+            display: flex;
+            flex-direction: row;
+            font-size: 1rem;
+            margin-top: 3rem;
+            
+        }
+
+        .footer-topline p, .footer-bottomline p {
+            margin-left: 1rem;
+            padding-top: 2.1rem;
+        }
+
+        .footer-topline p {
+            font-size: 1.8rem;
+        }
+
+        .footer-bottomline p {
+            font-size: 1.2rem;
+        }
+        .weather {
+            margin-top: -15rem;
+          }
+    }

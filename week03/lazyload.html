@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ivan Salamanca">
+    <meta name="description" content="WDD 230 - Web Frontend Development Ivan Salamanca course assignment portal. A portal filled with the results of many different programming activites, designed to provide other people with templates to work with HTML, CSS and JS.">
+    <meta property="og:title" content="Ivan Salamanca - WDD 230 - Web Frontend Development" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://ibb.co/QbLpGq2" />
+    <meta property="og:url" content="https://zigzagalloy01.github.io/wdd230/" />
+    <title>Lazy Load</title>
+    <link rel="stylesheet" type="text/css" href="styles/custom-normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/large.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <img id="chamber-logo" src="images/android-chrome-512x512.png" alt="Community Chamber Logo" loading="lazy">
+        <h1>Lazy Load</h1>
+        <section id="social-media-logos">
+            <a href="https://www.facebook.com" title="facebook"><img id="facebook-logo" src="images/facebook.jpg" alt="Facebook Logo" loading="lazy"></a>
+            <a href="https://www.instagram.com" title="facebook"><img id="instagram-logo" src="images/instagram.jpg" alt="Instagram Logo" loading="lazy"></a>
+        </section>
+        <nav class="navigation-largesize">
+            <a href="../index.html" title="Home">Home</a>
+            <a href="#" title="About Us" class="active">Discover</a>
+            <a href="" title="Service">Directory</a>
+            <a href="#" title="History">Join</a>
+        </nav>
+    </header>
+    <nav class="navigation">
+        <a href="../index.html" title="Home">Home</a>
+        <a href="" title="About Us" class="active">Discover</a>
+        <a href="" title="Service">Directory</a>
+        <a href="" title="History">Join</a>
+    </nav>
+    <main>
+        <section id="background-section"><a href="https://imagecompressor.11zon.com/es/reduce-picture/reduce-picture-to-84kb"><button id="join">Compress to 87 kb</button></a><img id="background-image" src="images/landscape.webp" alt="Community Chamber Background Picture" loading="lazy"></section>
+        <button id="menu"></button>
+        <section id="main-content">
+            <div class="events">
+                <h1>Forest</h1>
+                <div class="line"></div>
+                <pictures>
+                    <img id="girl-forest" src="images/girlForest.jpeg" alt="Girl taking photos in the forest" loading="lazy">
+                </pictures>
+                <p>Come to take some photos!</p>
+                <p>photos@lazyload.com</p>
+                <a href="">+999-999-9999</a>
+            </div>
+            <div class="weather">
+                <h1>Pink Bloom</h1>
+                <div class="line"></div>
+                <picture>
+                    <img id="orange-blouse" src="images/orangeBlouse.jpeg" alt="Orange blouse in a nature background" loading="lazy">
+                </picture>
+            </div>
+            <div class="bioinformatics">
+                <h2>Beach</h2>
+                <div class="line"></div>
+                <picture>
+                    <img id="sun-beach" src="images/sunBeach.jpeg" alt="Bright sunlight on the beach" loading="lazy">
+                </picture>
+            </div>
+            <div class="materials">
+                <h2>Sun Flowers</h2>
+                <div class="line"></div>
+                <picture>
+                    <img id="sun-flowers" src="images/sunflowers.jpeg" alt="A field of sunflowers" loading="lazy">
+                </picture>
+            </div>
+            <div class="vaccines">
+                <h2>Stairs</h2>
+                <div class="line"></div>
+                <picture>
+                    <img id="stairs" src="images/stairs.jpeg" alt="Orange blouse in a nature background" loading="lazy">
+                </picture>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <div class="footer-topline">
+                <img id="chamber-logo" src="images/android-chrome-512x512.png" alt="Community Chamber Logo" loading="lazy">
+                <p>Community Chamber</p>
+                <p>info@communitychamber.org</p>
+                <p>+526563956075</p>
+            </div>
+            <div class="footer-bottomline">
+                <p>©2024 Community Chamber</p>
+                <p> | </p>
+                <p>L. Iván Salamanca C.</p>
+                <p> | </p>
+                <p>WDD 230 Project </p>
+                <p> | </p>
+                <p id="last-modified">Last modification: </p>
+            </div>
+        </section>
+        
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
