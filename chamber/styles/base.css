@@ -40,6 +40,9 @@
     padding: 2rem 0 2rem 0rem;
     text-align: center;
   }
+  header h1{
+    font-size: var(--header-size);
+  }
 
   span {
     margin: 0 0 0 0;
@@ -153,6 +156,7 @@
       place-items: center;
       max-width: 100%;
   }
+
   #join {
       position: absolute;
       top: 50%;
