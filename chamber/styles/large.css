@@ -23,17 +23,18 @@
 
   }
 
+    @media (min-width: 28.125rem) {
+        .events, .weather, .bioinformatics, .materials, .vaccines, .energy {
+            font-size: 1.5rem;
+        }
+    }
+
     @media (min-width: 50.43rem) {
 
         #chamber-logo {
             width: 5rem;
             height: 5rem;
             margin: 0 1rem 0 1rem;
-        }
-
-        h1 {
-        margin-left: 0;
-        text-align: center;
         }
     
         h2 {
@@ -94,7 +95,7 @@
         }
         .events, .weather, .bioinformatics, .materials, .vaccines, .energy {
             grid-column: 10/21;
-            font-size: 1.1rem;
+            font-size: 1.8rem;
         }
 
         #sidebar {
@@ -169,7 +170,7 @@
         }
         .events, .weather, .bioinformatics, .materials, .vaccines, .energy {
             grid-column: 8/21;
-            font-size: 1.4rem;
+            font-size: 2rem;
             margin-right: 1.5rem;
         }
 
