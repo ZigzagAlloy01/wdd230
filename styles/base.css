@@ -46,7 +46,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      font-family: var(--heading-font);
+      font-family: var(--paragraph-font);
   }
   header, h2, .card-activities, .card-information {
     font-size: 1.2rem;
@@ -232,7 +232,7 @@
     box-shadow: 0 0 3rem #fff;
     font-size: 0.8rem;
     text-align: center;
-    font-family: var(--heading-font);
+    font-family: var(--paragraph-font);
     opacity: 0.79;
   }
   .footer-topline, .footer-bottomline {
@@ -258,3 +258,29 @@
     height: 4rem;
     margin: 0 1rem 0 1rem;
   }
+  iframe {
+    margin: 2rem 0 2rem 0;
+    width: 14rem;
+    height: 11rem;
+  }
+  .label {
+    font-family: var(--paragraph-font);
+    font-weight: 700;
+  }
+
+  @media (min-width: 27rem) {
+    iframe {
+      margin: 2rem 0 2rem 0;
+      width: 24rem;
+      height: 21rem;
+    }
+  }
+
+  @media (min-width: 37rem) {
+    iframe {
+      margin: 2rem 0 2rem 0;
+      width: 34rem;
+      height: 31rem;
+    }
+  }
+  

@@ -17,7 +17,7 @@
 </head>
 <body>
     <header>
-        <img id="profile" src="images/ivanSalamanca.jpeg" alt="My profile picture">
+        <img id="profile" src="images/ivanSalamanca.webp" alt="My profile picture" loading="lazy">
         <span>Ivan Salamanca</span>
         <div id="mode">
             🕶️
@@ -38,7 +38,7 @@
             <picture>
                 <source srcset="week03/images/houstonTempleSmall.webp" media="(max-width: 400px)">
                 <source srcset="week03/images/houstonTempleMedium.webp" media="(max-width: 960px)">
-                <img src="week03/images/houstonTempleLarge.webp" alt="table setting" width="1500" height="750">
+                <img src="week03/images/houstonTempleLarge.webp" alt="table setting" width="1500" height="750" loading="lazy">
             </picture>
         </div>
         <div id="cards">
@@ -57,17 +57,17 @@
             <section class="card-information">
                 <h2>Information</h2>
                 <ul >
-                    <li>Ciudad Juarez, Mexico</li>
-                    <li>Weather: </li>
-                    <li>Visits to this page: </li>
+                    <li>Ciudad Juárez, México</li>
+                    <li>91.4 °F</li>
+                    <li><p><span class="label">Number of Visits: </span><span class="visits"></span></p></li>
                 </ul>
             </section>
         </div>
-        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11748.024517115331!2d-106.44230621435052!3d31.744013301551924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1715445648549!5m2!1ses-419!2smx" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
     <footer>
         <div class="footer-topline">
-            <img id="chamber-logo" src="images/android-chrome-512x512.png" alt="Main Page Logo" loading="lazy">
+            <img id="chamber-logo" src="images/android-chrome-512x512.webp" alt="Main Page Logo" loading="lazy">
             <p>Main Page</p>
             <p>info@project.org</p>
             <p>+526563956075</p>
@@ -80,8 +80,9 @@
             <p>WDD 230 Project</p>
             <p> | </p>
             <p id="last-modified">Last modification: </p>
+            
         </div>
     </footer>
-    <script src="scripts/getDates.js"></script>
+    <script src="scripts/index.js"></script>
 </body>
 </html>
