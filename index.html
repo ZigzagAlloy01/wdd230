@@ -11,12 +11,13 @@
     <meta property="og:url" content="https://zigzagalloy01.github.io/wdd230/" />
     <title>Ivan Salamanca - WDD 230 - Web Frontend Development</title>
     <link rel="stylesheet" type="text/css" href="styles/custom-normalize.css">
-    <link rel="stylesheet" type="text/css" href="styles/homePage.css">
-    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/large.css">
+    <link rel="icon" href="images/favicon.ico">
 </head>
 <body>
     <header>
-        <img src="images/ivanSalamanca.jpeg" alt="My profile picture">
+        <img id="profile" src="images/ivanSalamanca.jpeg" alt="My profile picture">
         <span>Ivan Salamanca</span>
         <div id="mode">
             🕶️
@@ -30,32 +31,56 @@
             <li><a href="">Form</a></li>
         </ul>
     </nav>
-    <h1>WDD 230: Web Frontend Development</h1>
     <main>
-        <section class="card-activities">
-            <h2>Learning Activities</h2>
-            <ul >
-                <li>Week 01: <a href="week01/holygrail.html">Layout</a> | <a href="week01/media-query.html">Media Query</a> | <a href="">JS Pen</a></li>
-                <li>Week 02: <a href="week02/design.html">Design</a> | <a href="week02/codePen.html">Code Pen</a> | <a href="week02/bom.html">BOM</a> | <a href="./chamber/index.html">Community Chamber</a></li> 
-                <li>Week 03:<a href="week03/images/landscape.webp">WebP</a> | <a href="week03/lazyload.html">Lazy Load</a> | <a href="week03/responsive-images.html">Responsive Images</a> | <a href="week03/bom.html">BOM</a></li>
-                <li>Week 04:<a href=""></a></li>
-                <li>Week 05:<a href=""></a></li>
-                <li>Week 06:<a href=""></a></li>
-                <li>Week 07:<a href=""></a></li>
-            </ul>
-        </section>
-        <section class="card-information">
-            <h2>Information</h2>
-            <ul >
-                <li>Ciudad Juarez, Mexico</li>
-                <li>Weather: </li>
-                <li>Visits to this page: </li>
-            </ul>
-        </section>
+        <h1>WDD 230: Web Frontend Development</h1>
+        <div id="hero">
+            <div class="label-hero">Houston Texas Temple</div>
+            <picture>
+                <source srcset="week03/images/houstonTempleSmall.webp" media="(max-width: 400px)">
+                <source srcset="week03/images/houstonTempleMedium.webp" media="(max-width: 960px)">
+                <img src="week03/images/houstonTempleLarge.webp" alt="table setting" width="1500" height="750">
+            </picture>
+        </div>
+        <div id="cards">
+            <section class="card-activities">
+                <h2>Learning Activities</h2>
+                <ul >
+                    <li>Week 01: <a href="week01/holygrail.html">Layout</a> | <a href="week01/media-query.html">Media Query</a> | <a href="">JS Pen</a></li>
+                    <li>Week 02: <a href="week02/design.html">Design</a> | <a href="week02/codePen.html">Code Pen</a> | <a href="week02/bom.html">BOM</a> | <a href="./chamber/index.html">Community Chamber</a></li> 
+                    <li>Week 03:<a href="week03/images/landscape.webp">WebP</a> | <a href="week03/lazyload.html">Lazy Load</a> | <a href="week03/responsive-images.html">Responsive Images</a> | <a href="week03/bom.html">BOM</a></li>
+                    <li>Week 04:<a href=""></a></li>
+                    <li>Week 05:<a href=""></a></li>
+                    <li>Week 06:<a href=""></a></li>
+                    <li>Week 07:<a href=""></a></li>
+                </ul>
+            </section>
+            <section class="card-information">
+                <h2>Information</h2>
+                <ul >
+                    <li>Ciudad Juarez, Mexico</li>
+                    <li>Weather: </li>
+                    <li>Visits to this page: </li>
+                </ul>
+            </section>
+        </div>
+        
     </main>
     <footer>
-        <p>©2024 Ivan Salamanca Mexico</p>
-        <p>Last modification: </p>
+        <div class="footer-topline">
+            <img id="chamber-logo" src="images/android-chrome-512x512.png" alt="Main Page Logo" loading="lazy">
+            <p>Main Page</p>
+            <p>info@project.org</p>
+            <p>+526563956075</p>
+        </div>
+        <div class="footer-bottomline">
+            <p>©2024 L. Iván Salamanca C.</p>
+            <p> | </p>
+            <p>México</p>
+            <p> | </p>
+            <p>WDD 230 Project</p>
+            <p> | </p>
+            <p id="last-modified">Last modification: </p>
+        </div>
     </footer>
     <script src="scripts/getDates.js"></script>
 </body>

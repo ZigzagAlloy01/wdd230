@@ -1,6 +1,7 @@
 const modeButton = document.querySelector("#mode");
 const main = document.querySelector("main");
 const h1 = document.querySelector("h1");
+const lastModified = document.querySelector('#last-modified');
 const darkMode = document.querySelectorAll(".card-activities ul, .card-information ul, .card-activities a, .card-information a");
 
 modeButton.addEventListener('click', function() {
@@ -24,3 +25,11 @@ modeButton.addEventListener('click', function() {
 		modeButton.textContent = "🕶️";
 	}
 });
+
+function updateLastModified() {
+	const now = new Date();
+	const stringDate = now.toLocaleString();
+	lastModified.textContent = `Last modification: ${stringDate}`;
+}
+
+updateLastModified();

@@ -1,7 +1,6 @@
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 const lastModified = document.querySelector('#last-modified');
-const apiKey = "AIzaSyCZ-iwkJ29kVTAI2CUHVbZ2YCnxTHPWecs";
 
 
 hamButton.addEventListener('click', () => {

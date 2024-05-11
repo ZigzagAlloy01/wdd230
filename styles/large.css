@@ -1,0 +1,259 @@
+@media (min-width: 48rem) {
+      footer {
+        display: grid;
+        grid-auto-flow: row;
+        background-color: var(--nav-background-color);
+        text-align: center;
+        font-size: 1.8rem;
+        padding: 2rem 0 3rem 0;
+        color: white;
+      }
+    
+      h1 {
+        margin: 1.2rem 0 1.2rem 0;
+        font-size: 1.5rem;
+      }
+    
+      section {
+        border: solid 0.1rem black;
+        color: white;
+        margin-bottom: 3rem;
+        box-shadow: 0.6rem 0.6rem 0.6rem rgba(0, 0, 0, 0.3);
+      }
+      .card-activities {
+        display: flex;
+        flex-direction: column;
+        margin-left: 7rem;
+        margin-top: 4rem;
+      }
+    
+      .card-information {
+        display: flex;
+        flex-direction: column;
+        margin: 4rem 7rem 0.2rem 7rem;
+      }
+    
+      .card-activities h2, .card-information h2 {
+        padding: 1rem 1rem 1rem 1.5rem;
+      }
+    
+      .card-activities ul, .card-information ul {
+        display: grid;
+        grid-auto-flow: row;
+        text-align: center;
+        margin-top: 3rem;
+        color: black;
+      }
+    
+      .card-activities li, .card-information li {
+        margin-bottom: 1.5rem;
+      }
+    
+      .card-activities a, .card-information a {
+        color: black;
+      }
+    
+      span {
+        font-weight: bold;
+      }
+    
+      ul li {
+          display:inline-block;
+          margin:  0rem 0.5rem 0rem 0.5rem;
+      }
+      ul li a{
+        text-decoration: none;
+        transition: color 1.5s ease;
+      }
+    
+      li a:hover {
+        background-color:  orange;
+      }
+    
+      #profile {
+          width: 10rem;
+          height: 10rem;
+          margin: 1rem 3rem 1rem 2rem;
+          border-radius: 2rem;
+      }
+      
+      nav {
+          background-color: black;
+          font-size: 2rem;
+      }
+      
+      #mode {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 3rem;
+        cursor: pointer;
+        font-size: 2rem;
+      }
+    
+      #cards {
+        display: flex;
+        flex-direction: row;
+      }
+    
+    #hero {
+        display: flex;
+    }
+    #cards {
+        display: flex;
+        flex-direction: row;
+    }
+    .card-activities a, .card-information a {
+        display: flex;
+        flex-direction: column;
+    }
+    header,
+    nav,
+    main,
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--heading-font);
+    }
+    header, h2, .card-activities, .card-information {
+        font-size: 1.2rem;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+    }
+    header, nav, a {
+        color: white;
+        padding: 1rem 1rem 1rem 1rem;
+    }
+
+    header, h2 {
+        background-color: var(--nav-background-color);
+        font-size: 2.5rem;
+    }
+    nav, span {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    #profile {
+        width: 7rem;
+        height: 7rem;
+        margin: 1rem 1rem 1rem 1rem;
+        border-radius: 2rem;
+    }
+    ul li {
+        display:inline-block;
+        margin:  0rem 1.2rem 0rem 1.2rem;
+    }
+    .card-activities, .card-information {
+      margin: 2rem 2rem 2rem 2rem;
+    } 
+    .footer-topline, .footer-bottomline {
+      display: flex;
+      flex-direction: column;
+      font-size: 1rem;
+      margin-top: 3rem;
+    }
+    .footer-topline p, .footer-bottomline p {
+        margin-left: 1rem;
+        padding-top: 2.1rem;
+    }
+
+    .footer-topline p {
+        font-size: 1.5rem;
+    }
+
+    .footer-bottomline p {
+        font-size: 1.2rem;
+    }
+    #chamber-logo {
+      display: flex;
+      place-self: center;
+      width: 5rem;
+      height: 5rem;
+      margin: 0 1rem 0 1rem;
+    }
+    .label-hero {
+      top: 18%;
+      left: 5.2%;
+      font-size: 1.5rem;
+    }
+    
+  }
+
+  @media (min-width: 67.19rem) {
+    main {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    #cards {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .card-activities, .card-information {
+      margin: 2rem 2rem 2rem 2rem;
+    } 
+
+    .card-activities a, .card-information a {
+      display: flex;
+      flex-direction: column;
+    }
+    ul li {
+      display:inline-block;
+      margin:  0rem 0.5rem 0rem 0.5rem;
+      font-size: 2rem;
+    }
+    header span{
+      font-size: 2rem;
+    }
+    #profile {
+      width: 12rem;
+      height: 12rem;
+      margin: 1rem 3rem 1rem 2rem;
+      border-radius: 2rem;
+    }
+    #hero{
+        display: grid;
+        place-content: center;
+    }
+    .footer-topline, .footer-bottomline {
+      display: flex;
+      flex-direction: row;
+      font-size: 1rem;
+      margin-top: 3rem;
+      
+    }
+
+    .footer-topline p, .footer-bottomline p {
+        margin-left: 1rem;
+        padding-top: 2.1rem;
+    }
+
+    .footer-topline p {
+        font-size: 1.8rem;
+    }
+
+    .footer-bottomline p {
+        font-size: 1.2rem;
+    }
+    #chamber-logo {
+      width: 6rem;
+      height: 6rem;
+      margin: 0 1.5rem 0 2rem;
+    }
+    .label-hero {
+      top: 18%;
+      left: 15%;
+      font-size: 1.8rem;
+    }
+    h1 {
+      margin: 1.2rem 0 1.2rem 0;
+      font-size: 1.8rem;
+    }
+  }

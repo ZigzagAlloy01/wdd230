@@ -48,6 +48,12 @@
       align-items: center;
       font-family: var(--heading-font);
   }
+  header, h2, .card-activities, .card-information {
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
   
   header, nav, a {
       color: white;
@@ -59,12 +65,24 @@
     font-size: 2.5rem;
   }
 
+  #profile {
+      width: 7rem;
+      height: 7rem;
+      margin: 1rem 1rem 1rem 1rem;
+      border-radius: 2rem;
+  }
+  ul li {
+      display: flex;
+      flex-wrap: wrap;
+      margin:  0rem 1.2rem 0rem 1.2rem;
+  }
+
   footer {
-    display: grid;
-    grid-auto-flow: row;
+    display: flex;
+    flex-direction: column;
     background-color: var(--nav-background-color);
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     padding: 2rem 0 3rem 0;
     color: white;
   }
@@ -72,7 +90,9 @@
   h1 {
     font-family: var(--heading-font);
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 1.2rem;
+    margin: 1.2rem 0 1.2rem 0;
+    font-size: 1.2rem;
   }
 
   section {
@@ -81,16 +101,21 @@
     margin-bottom: 3rem;
     box-shadow: 0.6rem 0.6rem 0.6rem rgba(0, 0, 0, 0.3);
   }
-
+  #cards {
+    display: flex;
+    flex-direction: column;
+  }
   .card-activities {
-    grid-auto-flow: column;
+    display: flex;
+    flex-direction: column;
     margin-left: 7rem;
     margin-top: 4rem;
   }
 
   .card-information {
-    grid-auto-flow: column;
-    margin: -11rem 7rem 0 7rem;
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 7rem 0.2rem 7rem;
   }
 
   .card-activities h2, .card-information h2 {
@@ -113,6 +138,10 @@
     color: black;
   }
 
+  #hero picture img {
+    width: 100%;
+    height: auto;
+  }
   span {
     font-weight: bold;
   }
@@ -130,14 +159,7 @@
     background-color:  orange;
   }
 
-  main {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1.25rem
-  }
-  
-  
-  img {
+  #profile {
       width: 10rem;
       height: 10rem;
       margin: 1rem 3rem 1rem 2rem;
@@ -151,43 +173,88 @@
   
   #mode {
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: -0.15rem;
+    right: 0.90rem;
     font-size: 3rem;
     cursor: pointer;
     font-size: 2rem;
   }
 
-  @media (max-width: 1075px) {
-    .card-activities a, .card-information a {
-        display: grid;
-        grid-auto-flow: column;
-      }
+  main {
+    display: flex;
+    flex-direction: column;
+}
+  #hero {
+    position: relative;
+    width: 100%;
+
   }
-  
-  @media (max-width: 768px) {
-    main {
-      grid-template-columns: 1fr;
-    }
-    header, h2, .card-activities, .card-information {
-        font-size: 2rem;
-        margin: 0;
-        padding: 0;
-        text-align: center;
-    }
-    nav, span {
-        font-size: 1.2rem;
-        text-align: center;
-    }
-    img {
-        width: 7rem;
-        height: 7rem;
-        margin: 1rem 1rem 1rem 1rem;
-        border-radius: 2rem;
-    }
-    ul li {
-        display: flex;
-        flex-wrap: wrap;
-        margin:  0rem 1.2rem 0rem 1.2rem;
-    }
+  #cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .card-activities a, .card-information a {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header, h2, .card-activities, .card-information {
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  nav, span {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  #profile {
+    width: 7rem;
+    height: 7rem;
+    margin: 1rem 1rem 1rem 1rem;
+    border-radius: 2rem;
+  }
+  ul li {
+    display: flex;
+    flex-wrap: wrap;
+    margin:  0rem 1.2rem 0rem 1.2rem;
+  }
+  .label-hero {
+    position: absolute;
+    top: 18%;
+    left: 9%;
+    color: black;
+    font-weight: bolder;
+    background: radial-gradient(#fff, #4D5B97);
+    border: 0.1rem solid rgba(0,0,0,.75);
+    padding: 0.3rem;
+    box-shadow: 0 0 3rem #fff;
+    font-size: 0.8rem;
+    text-align: center;
+    font-family: var(--heading-font);
+    opacity: 0.79;
+  }
+  .footer-topline, .footer-bottomline {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    margin-top: 3rem;
+  }
+  .footer-topline p, .footer-bottomline p {
+      margin-left: 1rem;
+      padding-top: 2.1rem;
+  }
+  .footer-topline p {
+      font-size: 1.41rem;
+  }
+  .footer-bottomline p {
+      font-size: 1rem;
+  }
+  #chamber-logo {
+    display: flex;
+    place-self: center;
+    width: 4rem;
+    height: 4rem;
+    margin: 0 1rem 0 1rem;
   }
