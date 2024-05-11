@@ -17,11 +17,11 @@
 </head>
 <body>
     <header>
-        <img id="chamber-logo" src="images/android-chrome-512x512.png" alt="Community Chamber Logo">
+        <img id="chamber-logo" src="images/android-chrome-512x512.png" alt="Community Chamber Logo" loading="lazy">
         <span>Community Chamber</span>
         <section id="social-media-logos">
-            <a href="https://www.facebook.com" title="facebook"><img id="facebook-logo" src="images/facebook.jpg" alt="Facebook Logo"></a>
-            <a href="https://www.instagram.com" title="facebook"><img id="instagram-logo" src="images/instagram.jpg" alt="Instagram Logo"></a>
+            <a href="https://www.facebook.com" title="facebook"><img id="facebook-logo" src="images/facebook.jpg" alt="Facebook Logo" loading="lazy"></a>
+            <a href="https://www.instagram.com" title="facebook"><img id="instagram-logo" src="images/instagram.jpg" alt="Instagram Logo" loading="lazy"></a>
         </section>
         <nav class="navigation-largesize">
             <a href="index.html" title="Home">Home</a>
@@ -37,47 +37,70 @@
         <a href="" title="History">Join</a>
     </nav>
     <main>
-        <section id="background-section"><button href="../index.html" id="join">Join the Chamber</button><img id="background-image" src="images/pinkSky.jpeg" alt="Community Chamber Background Picture"></section>
-        <button id="menu"></button>
+        <div id="sidebar">
+            <h1>📅 Your Visits to this Website</h1>
+            <hr>
+            <p><span class="label">Visits: </span> <span id="visits"></span></p>
+            <hr>
+            <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11748.024517115331!2d-106.44230621435052!3d31.744013301551924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1715445648549!5m2!1ses-419!2smx" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
         <section id="main-content">
             <div class="events">
-                <h1>Events</h1>
+                <h2>Flowers</h2>
                 <div class="line"></div>
+                <section class="background-section"><a href="../index.html"><button id="join">Join the Chamber</button></a><img class="side-image" src="images/flowers.webp" alt="Flowers Picture" loading="lazy"></section>
+                <button id="menu"></button>
                 <p>Join us in coming conferences!</p>
                 <p>events@communitychamber.com</p>
                 <a href="">+999-999-9999</a>
             </div>
             <div class="weather">
-                <h1>Weather</h1>
+                <h2>Overlook</h2>
                 <div class="line"></div>
+                <section class="background-section"><img class="side-image" src="images/overlook.webp" alt="A nice background Picture" loading="lazy"></section>
+                <p>Join us in coming conferences!</p>
+                <p>events@communitychamber.com</p>
+                <a href="">+999-999-9999</a>
             </div>
             <div class="bioinformatics">
-                <h2>Bioinformatics</h2>
+                <h2>River</h2>
                 <div class="line"></div>
-                <p>Learn about the latest in data science</p>
-                <p>data@communitychamber.com</p>
+                <section class="background-section"><img class="side-image" src="images/river.webp" alt="River Picture" loading="lazy"></section>
+                <p>Join us in coming conferences!</p>
+                <p>events@communitychamber.com</p>
                 <a href="">+999-999-9999</a>
             </div>
             <div class="materials">
-                <h2>Materials</h2>
+                <h2>Tree</h2>
                 <div class="line"></div>
-                <p>New inversions in materials science</p>
-                <p>materials@communitychamber.com</p>
+                <section class="background-section"><img class="side-image" src="images/tree.webp" alt="Solitary Tree Picture" loading="lazy"></section>
+                <p>Join us in coming conferences!</p>
+                <p>events@communitychamber.com</p>
                 <a href="">+999-999-9999</a>
             </div>
             <div class="vaccines">
-                <h2>Vaccines</h2>
+                <h2>Fire</h2>
                 <div class="line"></div>
-                <p>Discover the recent advancements in HPV vaccines</p>
-                <p>vaccines@communitychamber.com</p>
+                <section class="background-section"><img class="side-image" src="images/firethrower.webp" alt="A man throwing fire" loading="lazy"></section>
+                <p>Join us in coming conferences!</p>
+                <p>events@communitychamber.com</p>
+                <a href="">+999-999-9999</a>
+            </div>
+            <div class="energy">
+                <h2>Winter</h2>
+                <div class="line"></div>
+                <section class="background-section"><img class="side-image" src="images/winter.webp" alt="Trees in the winter Picture" loading="lazy"></section>
+                <p>Join us in coming conferences!</p>
+                <p>events@communitychamber.com</p>
                 <a href="">+999-999-9999</a>
             </div>
         </section>
     </main>
     <footer>
-        <section>
+        <section id="footer-lines">
             <div class="footer-topline">
-                <img id="chamber-logo" src="images/android-chrome-512x512.png" alt="Community Chamber Logo">
+                <img id="chamber-logo" src="images/android-chrome-512x512.webp" alt="Community Chamber Logo" loading="lazy">
                 <p>Community Chamber</p>
                 <p>info@communitychamber.org</p>
                 <p>+526563956075</p>
@@ -92,7 +115,6 @@
                 <p id="last-modified">Last modification: </p>
             </div>
         </section>
-        
     </footer>
     <script src="scripts/script.js"></script>
 </body>

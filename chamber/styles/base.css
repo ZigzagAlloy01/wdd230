@@ -19,7 +19,7 @@
 
     --nav-hover-background-color: #b81b0a;
 
-    --div-background-color: #7a89cc;
+    --div-background-color: #007ee6;
   }
 
   header,
@@ -133,23 +133,24 @@
     display: block;
   }
 
-  #background-section {
-    max-width: 100%;
-  }
-  #background-image {
-      margin: 0;
+  .side-image {
       max-width: 100%;
+      height: auto;
+      margin: 0.9rem 0.9rem 0.9rem 0.9rem; 
   }
+  
+  .side-image:hover {
+    box-shadow: 0 0 50px #333;
+  }
+
   main {
     display: flex;
     flex-direction: column;
   }
-  #background-section {
+  .background-section {
+      display: grid;
       position: relative;
-      max-width: 100%;
-  }
-  #background-image {
-      margin: 0;
+      place-items: center;
       max-width: 100%;
   }
   #join {
@@ -159,7 +160,7 @@
       transform: translate(-50%, -50%);
       color: #fff;
       font-weight: bolder;
-      font-size: 1.2rem;
+      font-size: 0.8rem;
       padding: 0.75rem 0.75rem 0.75rem 0.75rem;
       background-color: var(--primary-color);
       border-radius: 25%;
@@ -167,33 +168,80 @@
   }
   #main-content {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      max-width: 100%;
-      width: 200rem;
+      grid-template-columns: repeat(20, 1fr);
+      grid-template-rows: repeat(6, 1fr);
       font-family: var(--paragraph-font);
+      width: 90%;
   }
-  .events, .weather, .bioinformatics, .materials, .vaccines {
+  
+  .events, .weather, .bioinformatics, .materials, .vaccines, .energy {
     color:white;
     font-style: italic;
     font-weight: bold;
+    font-size: 0.8rem;
     background-color: var(--div-background-color);
     margin: 1rem 0rem 1rem 0rem;
     padding: 0 1rem 1rem 1rem;
-    grid-row: span 1;
-    grid-column: span 3;
+    grid-column: 1/21;
+  }
+  #sidebar {
+    display: grid;
+    top: -4rem;
+    left: 1rem;
+    width: 15rem;
+    height: 76hv;
+    color: white;
+    background-color: #007ee6;
+    padding: 0.7rem;
+    margin-top: 1rem;
+  }
+  iframe {
+    margin: 2rem 0 2rem 0;
+    width: 13rem;
+    height: 11rem;
+  }
+  .events {
+    grid-row: 1/2;
+  }
+  .weather {
+    grid-row: 2/3;
+  }
+  .bioinformatics {
+    grid-row: 3/4;
+  }
+  .materials {
+    grid-row: 4/5;
+  }
+  .vaccines {
+    grid-row: 5/6;
+  }
+  .energy {
+    grid-row: 6/7;
+  }
+
+  table {
+    border-collapse: collapse; 
+    color: white;
+  }
+  th, td {
+    padding: 0.46rem;
+    border: 0.0625rem solid #ddd;
   }
 
   .line {
       border-top: 0.125rem outset black;
-      width: 90%;
+      width: 98%;
       margin: 1rem 0rem 1rem 0rem;
   }
 
   .footer-topline p {
     font-size: 1.2rem;
-}
+  }
 
 .footer-bottomline p {
     font-size: 0.8rem;
-}
+  }
+  .label {
+    font-family: var(--paragraph-font);
+    font-weight: 700;
+  }
