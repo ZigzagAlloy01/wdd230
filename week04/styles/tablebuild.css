@@ -1,0 +1,52 @@
+:root {
+    --th-primary-background: #000000;
+    --th-secondary-background: #333333;
+    --td-white-background: #FFFFFF;
+    --td-gray-background: #EEEEEE;
+    --table-border-color:  #dbcfcf;
+}
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS';
+    }
+    
+    th, td {
+        padding: 0.7rem;
+        text-align: center;
+        border: 0.0625rem solid var(--table-border-color);
+        font-weight: bold;
+        font-size: 1.6rem;
+    }
+
+    caption {
+        padding: 0.7rem;
+        caption-side: bottom;
+        font-size: 1.2rem;
+    }
+
+    .row-one, .row-two {
+        color: var(--td-white-background);
+        font-size: 2rem;
+    }
+    .row-one {
+        background-color: var(--th-primary-background);
+    }
+
+    .row-two {
+        background-color: var(--th-secondary-background);
+    }
+
+    th {
+        background-color: var(--td-white-background);
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: var(--td-gray-background);
+    }
