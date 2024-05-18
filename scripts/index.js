@@ -1,6 +1,6 @@
 const modeButton = document.querySelector("#mode");
 const main = document.querySelector("main");
-const h1 = document.querySelector("h1");
+const h1 = document.querySelector("#h1-main");
 const lastModified = document.querySelector('#last-modified');
 const darkMode = document.querySelectorAll(".card-activities ul, .card-information ul, .card-activities a, .card-information a");
 const visitsDisplay = document.querySelector(".visits");

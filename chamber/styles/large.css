@@ -27,6 +27,11 @@
         .events, .weather, .bioinformatics, .materials, .vaccines, .energy {
             font-size: 1.5rem;
         }
+        #background-section {
+            width: 80%;
+            height: auto;
+            margin: 0;
+        }
     }
 
     @media (min-width: 50.43rem) {
@@ -70,10 +75,6 @@
         .navigation-largesize a:hover {
             background-color: var(--nav-hover-background-color);
             font-weight: 700;
-        }
-
-        .background-section {
-            max-width: 80%;
         }
     
         #join {
