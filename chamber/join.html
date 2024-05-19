@@ -9,7 +9,7 @@
     <meta property="og:type" content="website"/>
     <meta property="og:image" content="https://ibb.co/QbLpGq2"/>
     <meta property="og:url" content="https://zigzagalloy01.github.io/wdd230/"/>
-    <title>Iván Salamanca - WDD 230 - Web Frontend Development</title>
+    <title>Join Us</title>
     <link rel="stylesheet" type="text/css" href="../styles/custom-normalize.css">
     <link rel="stylesheet" type="text/css" href="../styles/base.css">
     <link rel="stylesheet" type="text/css" href="../styles/large.css">
@@ -19,7 +19,7 @@
 <body>
     <header>
         <img id="profile" src="images/cc.webp" alt="Chamber logo" loading="lazy">
-        <h1>Course Proposal</h1>
+        <h1>Join Us</h1>
         <div id="mode">
             🕶️
         </div>
@@ -29,14 +29,30 @@
             <li><a href="../index.html">About</a></li>
             <li class="active"><a href="#">Propose</a></li>
             <li><a href="#">Winners</a></li>
-            <li><a href="#">Contact</a></li>    
+            <li><a href="#">Contact</a></li>
         </ul>
     </nav>
     <main>
-        <h1 id="h1-main">Course Proposal Application</h1>
-        <form id="myForm" method="post" action="record.html">
+        <h1 id="h1-main">Join our Chamber</h1>
+        <form id="myForm" method="post" action="thankyou.html">
             <fieldset>
                 <legend>Applicant Information</legend>
+                <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                  </div>
+            
+                  <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                  </div>
+            
+                  <div class="form-group">
+                    <label for="title">Title/Position:</label>
+                    <input type="text" id="title" name="title" required
+                           pattern="[A-Za-z\- ]{7,}"
+                           title="Please enter at least 7 characters with letters, hyphens, and spaces">
+                </div>
                 <div class="form-group">
                     <label for="username">Username <input type="text" id="username" name="username" required></label>
                 </div>
@@ -52,20 +68,54 @@
                     <!--  
                         sal23010@byui.edu
                     -->  
-                    <label for="email">Email <input type="email" id="email" name="email" pattern="/^([a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+)@(byui|byuh)[-.]edu$/;" placeholder="Please enter a valid BYUI email address" required></label>
+                    <label for="email">Email <input type="email" id="email" name="email" pattern="/^([a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+)@(byui|byuh)[-.]edu$/;" placeholder="Please enter a valid BYUI email address" required></label>
                     <span class="error" id="emailError"></span>
                 </div>
+                <div class="form-group">
+                    <label for="phone">Mobile Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                  </div>
+            
+                  <div class="form-group">
+                    <label for="organization">Business/Organization Name:</label>
+                    <input type="text" id="organization" name="organization" required>
+                  </div>
+            
+                  <div class="form-group">
+                    <label for="membership">Membership Level:</label>
+                    <select id="membership" name="membership" required>
+                      <option value="np">NP Membership (Free)</option>
+                      <option value="bronze">Bronze Membership</option>
+                      <option value="silver">Silver Membership</option>
+                      <option value="gold">Gold Membership</option>
+                    </select>
+                  </div>
+            
+                  <div class="form-group">
+                    <label for="description">Business/Organization Description:</label>
+                    <textarea id="description" name="description" rows="5"></textarea>
+                  </div>
+                  <input type="hidden" name="timestamp" id="timestamp" value="<?php echo date('Y-m-d H:i:s'); ?>">            
                 <div class="form-group">
                     <label for="pageRating">Page Rating <input type="range" id="pageRating" name="pageRating" min="1" max="10" step="1" value="5" oninput="updateRatingValue(this.value)"></label>
                     <span id="ratingValue">5</span>
                 </div>
                 <button type="submit">Submit</button>
             </fieldset>
-            <ul >
-                <li>Ciudad Juárez, México</li>
-                <li>91.4 °F</li>
-                <li><p><span class="label">Number of Visits: </span><span class="visits"></span></p></li>
-            </ul>
+            <div class="membership-benefits">
+                <p>Membership Benefits</p>
+                <p>NP Membership: Gain access to our member directory and networking events.</p>
+                <p>Bronze Membership: Everything in NP Membership, plus discounted event registration fees.</p>
+                <p>Silver Membership: Everything in Bronze Membership, plus priority listing in the member directory and a free spotlight position on the homepage (monthly rotation).</p>
+                <p>Gold Membership: Everything in Silver Membership, plus additional advertising opportunities and exclusive training sessions.</p>
+            </div>
+            
+        </form>
+        <ul >
+            <li>Ciudad Juárez, México</li>
+            <li>91.4 °F</li>
+            <li><p><span class="label">Number of Visits: </span><span class="visits"></span></p></li>
+        </ul>
     </main> 
     <footer>
         <div class="footer-topline">

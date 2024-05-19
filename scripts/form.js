@@ -31,7 +31,7 @@ form.addEventListener('submit', function(event) {
     document.getElementById('password').focus();
     return false;
     }
-    window.location.href = 'record.html';
+    window.location.href = 'thankyou.html';
     alert('Form submitted successfully!');
 });
 
@@ -58,3 +58,5 @@ function validateEmail(email) {
       submitButton.disabled = false; 
     }
   });
+
+  document.getElementById('timestamp').value = new Date().toISOString().slice(0, 19);

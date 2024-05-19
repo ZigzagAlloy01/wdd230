@@ -267,6 +267,17 @@
     font-family: var(--paragraph-font);
     font-weight: 700;
   }
+  .membership-benefits {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+  }
+  .membership-benefits p {
+    margin-top: 1rem;
+    font-family: var(--heading-font);
+    font-weight: bolder;
+  }
 
   @media (min-width: 27rem) {
     iframe {
