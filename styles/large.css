@@ -42,15 +42,10 @@
         grid-auto-flow: row;
         text-align: center;
         margin-top: 3rem;
-        color: black;
       }
     
       .card-activities li, .card-information li {
         margin-bottom: 1.5rem;
-      }
-    
-      .card-activities a, .card-information a {
-        color: black;
       }
     
       span {
