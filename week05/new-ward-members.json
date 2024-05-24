@@ -1,0 +1,33 @@
+{
+    "familyName": "Rogel",
+    "movedIn": "2016-10-26",
+    "familyRecords": 5,
+    "visitedByboshipric": true,
+    "members": [
+      {
+        "name": "John Rogel",
+        "gender": "Male",
+        "birthdate": "1979-04-10"
+      },
+      {
+        "name": "Sarah Rogel",
+        "gender": "Female",
+        "birthdate": "1979-10-10"
+      },
+      {
+        "name": "Laura Rogel",
+        "gender": "Female",
+        "birthdate": "2001-11-25"
+      },
+      {
+        "name": "Keanu Rogel",
+        "gender": "Male",
+        "birthdate": "2003-10-01"
+      },
+      {
+        "name": "Spencer Rogel",
+        "gender": "Male",
+        "birthdate": "2005-06-01"
+      }
+    ]
+  }

@@ -1,0 +1,67 @@
+:root {
+    --header-color: #4D4D96;
+    --card-background: #B9B9CC;
+    --container-background: #DDDDDD;
+    --general-font: helvetica; 
+}
+    * {
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    #cards, header, section, footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--general-font);
+    }
+
+    header {
+        flex-direction: column;
+        background-color: var(--container-background);
+    }
+
+    h1, h2, #bottom {
+        color: var(--header-color);
+    }
+
+    h1, #bottom {
+        margin: 1.6rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    #bottom {
+        font-size: 1.6rem;
+        font-weight: bolder;
+    }
+
+    #cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 100%;
+        margin: 4rem;
+    }
+
+    section {
+        flex-direction: column;
+        margin: 1rem;
+        padding: 2rem;
+        background-color: var(--card-background);
+        width: 16rem;
+        height: 20rem;
+        border: 0.0625rem solid black;
+        box-shadow: 0 0 0.8rem rgba(1, 1, 1, 1); 
+    }
+
+    p {
+        font-size: 0.8rem;
+        font-weight: bold;
+        margin: 0.4rem 0 0.4rem 0;
+    }
+
+    footer {
+        background-color: var(--container-background);
+    }
