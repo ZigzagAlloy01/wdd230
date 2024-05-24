@@ -1,0 +1,131 @@
+{
+    "weeks": [
+      {
+        "week": "Week 1",
+        "links": [
+            {
+                "url": "./week01/holygrail.html",
+                "title": "Layout" 
+            },
+            {
+                "url": "week01/media-query.html",
+                "title": "Media Query" 
+            }
+        ]
+      },
+      {
+        "week": "Week 2",
+        "links": [
+            {
+                "url": "week02/design.html",
+                "title": "Design" 
+            },
+            {
+                "url": "week02/codePen.html",
+                "title": "Code Pen" 
+            },
+            {
+                "url": "week02/bom.html",
+                "title": "BOM" 
+            },
+            {
+                "url": "./chamber/index.html",
+                "title": "Community Chamber" 
+            }
+        ]
+      },
+      {
+        "week": "Week 3",
+        "links": [
+            {
+                "url": "week03/images/landscape.webp",
+                "title": "WebP" 
+            },
+            {
+                "url": "week03/lazyload.html",
+                "title": "Lazy Load" 
+            },
+            {
+                "url": "week03/responsive-images.html",
+                "title": "Responsive images" 
+            },
+            {
+                "url": "./chamber/discover.html",
+                "title": "Discover" 
+            }
+        ]
+      },
+      {
+        "week": "Week 4",
+        "links": [
+            {
+                "url": "week04/codePen.html",
+                "title": "Code Pen" 
+            },
+            {
+                "url": "week04/tablebuild.html",
+                "title": "Table Build" 
+            },
+            {
+                "url": "week04/images/combinator.jpeg",
+                "title": "Combinators" 
+            },
+            {
+                "url": "week04/index.html",
+                "title": "Form" 
+            },
+            {
+                "url": "./form.html",
+                "title": "Second Form" 
+            }
+        ]
+      },
+      {
+        "week": "Week 5",
+        "links": [
+            {
+                "url": "week05/codePen.html",
+                "title": "Pseudo-element" 
+            },
+            {
+                "url": "week05/new-ward-members.json",
+                "title": "JSON File" 
+            },
+            {
+                "url": "week05/prophets.html",
+                "title": "Latter-day Prophets" 
+            },
+            {
+                "url": "",
+                "title": "" 
+            }
+        ]
+      },
+      {
+        "week": "Week 6",
+        "links": [
+            {
+                "url": "",
+                "title": "" 
+            },
+            {
+                "url": "",
+                "title": "" 
+            }
+        ]
+      },
+      {
+        "week": "Week 7",
+        "links": [
+            {
+                "url": "",
+                "title": "" 
+            },
+            {
+                "url": "",
+                "title": "" 
+            }
+        ]
+      }
+    ]
+  }
