@@ -23,6 +23,7 @@ function displayResults(data) {
     currentTemp.innerHTML = `${data.main.temp}&deg;F`;
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     weatherIcon.setAttribute('src', iconsrc);
+    weatherIcon.setAttribute('alt', 'Weather Icon');
     captionDesc.textContent = `${data.weather[0].description}`;
 }
   apiFetch();
