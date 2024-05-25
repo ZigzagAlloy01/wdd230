@@ -1,0 +1,116 @@
+{
+    "companies": [
+      {
+        "name": "Company A",
+        "address": "123 Main St, Anytown, CA 12345",
+        "phonenumber": "(555) 555-5555",
+        "website": "https://www.companya.com",
+        "imageurl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fHBlcnNvbmF8ZW58MHx8MHx8fDA%3D",
+        "membershiplevel": "Gold",
+        "other": {
+            "founded": "2018",
+            "employeeSize": 343,
+            "industry": "Technology",
+            "specialization": "Software Development"
+        }
+      },
+      {
+        "name": "Company B",
+        "address": "123 Main St, Anytown, CA 12345",
+        "phonenumber": "(555) 555-5555",
+        "website": "https://www.companyb.com",
+        "imageurl": "https://images.unsplash.com/photo-1495366691023-cc4eadcc2d7e?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTB8fHBlcnNvbmF8ZW58MHx8MHx8fDA%3D",
+        "membershiplevel": "Silver",
+        "other": {
+            "founded": "2020",
+            "employeeSize": 150,
+            "industry": "Technology",
+            "specialization": "Software Development"
+        }
+      },
+      {
+        "name": "Company C",
+        "address": "123 Main St, Anytown, CA 12345",
+        "phonenumber": "(555) 555-5555",
+        "website": "https://www.companyc.com",
+        "imageurl": "https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHBlcnNvbmF8ZW58MHx8MHx8fDA%3D",
+        "membershiplevel": "Bronze",
+        "other": {
+            "founded": "2023",
+            "employeeSize": 82,
+            "industry": "Technology",
+            "specialization": "Software Development"
+        }
+      },
+      {
+        "name": "Company D",
+        "address": "123 Main St, Anytown, CA 12345",
+        "phonenumber": "(555) 555-5555",
+        "website": "https://www.companya.com",
+        "imageurl": "https://images.unsplash.com/photo-1542206395-9feb3edaa68d?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fHBlcnNvbmF8ZW58MHx8MHx8fDA%3D",
+        "membershiplevel": "Gold",
+        "other": {
+            "founded": "2016",
+            "employeeSize": 400,
+            "industry": "Technology",
+            "specialization": "Software Development"
+        }
+      },
+      {
+        "name": "Company E",
+        "address": "123 Main St, Anytown, CA 12345",
+        "phonenumber": "(555) 555-5555",
+        "website": "https://www.companye.com",
+        "imageurl": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVyc29uYXxlbnwwfHwwfHx8MA%3D%3D",
+        "membershiplevel": "Gold",
+        "other": {
+            "founded": "2010",
+            "employeeSize": 320,
+            "industry": "Technology",
+            "specialization": "Software Development"
+        }
+      },
+      {
+        "name": "Company F",
+        "address": "123 Main St, Anytown, CA 12345",
+        "phonenumber": "(555) 555-5555",
+        "website": "https://www.companyf.com",
+        "imageurl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDh8fHBlcnNvbmF8ZW58MHx8MHx8fDA%3D",
+        "membershiplevel": "Gold",
+        "other": {
+            "founded": "2000",
+            "employeeSize": 700,
+            "industry": "Technology",
+            "specialization": "Software Development"
+        }
+      },
+      {
+        "name": "Company G",
+        "address": "123 Main St, Anytown, CA 12345",
+        "phonenumber": "(555) 555-5555",
+        "website": "https://www.companyg.com",
+        "imageurl": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDd8fHBlcnNvbmF8ZW58MHx8MHx8fDA%3D",
+        "membershiplevel": "Silver",
+        "other": {
+            "founded": "2023",
+            "employeeSize": 54,
+            "industry": "Technology",
+            "specialization": "Software Development"
+        }
+      },
+      {
+        "name": "Company H",
+        "address": "123 Main St, Anytown, CA 12345",
+        "phonenumber": "(555) 555-5555",
+        "website": "https://www.companyh.com",
+        "imageurl": "https://images.unsplash.com/photo-1532074205216-d0e1f4b87368?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzF8fHBlcnNvbmF8ZW58MHx8MHx8fDA%3D",
+        "membershiplevel": "Bronze",
+        "other": {
+            "founded": "2024",
+            "employeeSize": 15,
+            "industry": "Technology",
+            "specialization": "Software Development"
+        }
+      }
+    ]
+  }

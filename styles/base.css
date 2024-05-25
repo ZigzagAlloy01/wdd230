@@ -41,7 +41,7 @@
   
   header,
   nav,
-  main,
+  main, .links-list,
   footer {
       display: flex;
       justify-content: center;
@@ -63,6 +63,12 @@
   header, h2 {
     background-color: var(--nav-background-color);
     font-size: 2.5rem;
+  }
+
+  main li {
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 0.5rem;
   }
 
   #profile {
@@ -278,6 +284,24 @@
     margin-top: 1rem;
     font-family: var(--heading-font);
     font-weight: bolder;
+  }
+
+  @media (max-width: 21.875rem) {
+    .footer-topline, .footer-bottomline {
+      display: flex;
+      flex-direction: column;
+      margin-top: 0.3rem;
+      margin-left: -0.5rem;
+    }
+    .footer-topline p, .footer-bottomline p {
+        padding-top: 0.3rem;
+    }
+    .footer-topline p {
+        font-size: 1.4rem;
+    }
+    .footer-bottomline p {
+        font-size: 0.8rem;
+    }
   }
 
   @media (min-width: 27rem) {

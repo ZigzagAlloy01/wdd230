@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ivan Salamanca">
+    <meta name="description" content="WDD 230 - Web Frontend Development Ivan Salamanca directory assignment portal.">
+    <meta property="og:title" content="Ivan Salamanca - WDD 230 - Web Frontend Development"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="https://ibb.co/QbLpGq2"/>
+    <meta property="og:url" content="https://zigzagalloy01.github.io/wdd230/"/>
+    <title>CC - Directory</title>
+    <link rel="stylesheet" type="text/css" href="styles/custom-normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/large.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <img id="chamber-logo" src="images/android-chrome-512x512.png" alt="Community Chamber Logo" loading="lazy">
+        <h1>Community Chamber</h1>
+        <section id="social-media-logos">
+            <a href="https://www.facebook.com" title="facebook"><img id="facebook-logo" src="images/facebook.jpg" alt="Facebook Logo" loading="lazy"></a>
+            <a href="https://www.instagram.com" title="facebook"><img id="instagram-logo" src="images/instagram.jpg" alt="Instagram Logo" loading="lazy"></a>
+        </section>
+        <nav class="navigation-largesize">
+            <a href="index.html" title="Home">Home</a>
+            <a href="discover.html" title="About Us" class="active">Discover</a>
+            <a href="directory.html" title="Service">Directory</a>
+            <a href="join.html" title="History">Join</a>
+        </nav>
+    </header>
+    <nav class="navigation">
+        <a href="index.html" title="Home">Home</a>
+        <a href="discover.html" title="About Us" class="active">Discover</a>
+        <a href="directory.html" title="Service">Directory</a>
+        <a href="join.html" title="History">Join</a>
+    </nav>
+    <main>
+        <button id="menu"></button>
+        <div class="menu">
+            <button id="grid">⏹️Grid</button>
+            <button id="list">📄List</button>
+        </div>
+        <div id="cards"></div>
+        <div class="counter-visits">
+            <p id="counter">📅 Your Visits to this Website</p>
+            <hr>
+            <p><span class="label">Visits: </span> <span id="visits"></span></p>
+            <hr>
+            <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+        </div>
+    </main>
+    <footer>
+        <section id="footer-lines">
+            <div class="footer-topline">
+                <img id="chamber-logo" src="images/cc.webp" alt="Community Chamber Logo" loading="lazy">
+                <p>Community Chamber</p>
+                <p>info@communitychamber.org</p>
+                <p>+526563956075</p>
+            </div>
+            <div class="footer-bottomline">
+                <p>©2024 Community Chamber</p>
+                <p> | </p>
+                <p>L. Iván Salamanca C.</p>
+                <p> | </p>
+                <p>WDD 230 Project </p>
+                <p> | </p>
+                <p id="last-modified">Last modification: </p>
+            </div>
+        </section>
+    </footer>
+    <script src="scripts/directory.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
