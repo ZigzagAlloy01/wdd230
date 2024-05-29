@@ -1,95 +1,85 @@
 @media (min-width: 48rem) {
-      footer {
-        display: grid;
-        grid-auto-flow: row;
-        background-color: var(--nav-background-color);
-        text-align: center;
-        font-size: 1.8rem;
-        padding: 2rem 0 3rem 0;
-        color: white;
-      }
+    footer {
+      display: grid;
+      grid-auto-flow: row;
+      background-color: var(--nav-background-color);
+      text-align: center;
+      font-size: 1.8rem;
+      padding: 2rem 0 3rem 0;
+      color: white;
+    }
+  
+    h1 {
+      margin: 1.2rem 0 1.2rem 0;
+      font-size: 1.5rem;
+    }
+  
+    section {
+      border: solid 0.1rem black;
+      color: white;
+      margin-bottom: 3rem;
+      box-shadow: 0.6rem 0.6rem 0.6rem rgba(0, 0, 0, 0.3);
+    }
+    .card-activities {
+      display: flex;
+      flex-direction: column;
+      margin-left: 7rem;
+      margin-top: 4rem;
+    }
+  
+    .card-information {
+      display: flex;
+      flex-direction: column;
+      margin: 4rem 7rem 0.2rem 7rem;
+    }
+  
+    .card-activities h2, .card-information h2 {
+      padding: 1rem 1rem 1rem 1.5rem;
+    }
+
+    .card-activities li, .card-information li {
+      margin-bottom: 1.5rem;
+    }
+  
+    span {
+      font-weight: bold;
+    }
+
+    ul li {
+      display: inline-block;
+      margin:  0rem 0.5rem 0rem 0.5rem;
+      font-size: 2rem;
+    }
+
+    li a:hover {
+      background-color:  orange;
+    }
+  
+    #profile {
+        width: 10rem;
+        height: 10rem;
+        margin: 1rem 3rem 1rem 2rem;
+        border-radius: 2rem;
+    }
     
-      h1 {
-        margin: 1.2rem 0 1.2rem 0;
-        font-size: 1.5rem;
-      }
-    
-      section {
-        border: solid 0.1rem black;
-        color: white;
-        margin-bottom: 3rem;
-        box-shadow: 0.6rem 0.6rem 0.6rem rgba(0, 0, 0, 0.3);
-      }
-      .card-activities {
-        display: flex;
-        flex-direction: column;
-        margin-left: 7rem;
-        margin-top: 4rem;
-      }
-    
-      .card-information {
-        display: flex;
-        flex-direction: column;
-        margin: 4rem 7rem 0.2rem 7rem;
-      }
-    
-      .card-activities h2, .card-information h2 {
-        padding: 1rem 1rem 1rem 1.5rem;
-      }
-    
-      .card-activities ul, .card-information ul {
-        display: grid;
-        grid-auto-flow: row;
-        text-align: center;
-        margin-top: 3rem;
-      }
-    
-      .card-activities li, .card-information li {
-        margin-bottom: 1.5rem;
-      }
-    
-      span {
-        font-weight: bold;
-      }
-    
-      ul li {
-          display:inline-block;
-          margin:  0rem 0.5rem 0rem 0.5rem;
-      }
-      ul li a{
-        text-decoration: none;
-        transition: color 1.5s ease;
-      }
-    
-      li a:hover {
-        background-color:  orange;
-      }
-    
-      #profile {
-          width: 10rem;
-          height: 10rem;
-          margin: 1rem 3rem 1rem 2rem;
-          border-radius: 2rem;
-      }
-      
-      nav {
-          background-color: black;
-          font-size: 2rem;
-      }
-      
-      #mode {
-        position: absolute;
-        top: 1rem;
-        right: 1rem;
-        font-size: 3rem;
-        cursor: pointer;
+    nav {
+        background-color: black;
         font-size: 2rem;
-      }
+    }
     
-      #cards {
-        display: flex;
-        flex-direction: row;
-      }
+    #mode {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      font-size: 3rem;
+      cursor: pointer;
+      font-size: 2rem;
+    }
+  
+    #cards {
+      display: flex;
+      flex-direction: row;
+    }
     
     #hero {
         display: flex;
@@ -102,12 +92,7 @@
         display: flex;
         flex-direction: column;
     }
-    header, h2, .card-activities, .card-information {
-        font-size: 1.2rem;
-        margin: 0;
-        padding: 0;
-        text-align: center;
-    }
+
     main {
       display: flex;
       flex-direction: column;
@@ -131,10 +116,7 @@
         margin: 1rem 1rem 1rem 1rem;
         border-radius: 2rem;
     }
-    ul li {
-        display:inline-block;
-        margin:  0rem 1.2rem 0rem 1.2rem;
-    }
+
     .card-activities, .card-information {
       margin: 2rem 2rem 2rem 2rem;
     } 
@@ -192,19 +174,11 @@
       flex-direction: row;
     }
 
-    .card-activities, .card-information {
-      margin: 2rem 2rem 2rem 2rem;
-    } 
-
     .card-activities a, .card-information a {
       display: flex;
       flex-direction: column;
     }
-    ul li {
-      display:inline-block;
-      margin:  0rem 0.5rem 0rem 0.5rem;
-      font-size: 2rem;
-    }
+    
     header span{
       font-size: 2rem;
     }

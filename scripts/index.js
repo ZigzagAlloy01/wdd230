@@ -3,7 +3,6 @@ const main = document.querySelector("main");
 const h1 = document.querySelector("#h1-main");
 const lastModified = document.querySelector('#last-modified');
 const visitsDisplay = document.querySelector(".visits")
-const temperature = document.querySelector("#current-temp");
 
 let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
 

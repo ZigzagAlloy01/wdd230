@@ -13,13 +13,13 @@
   
     --paragraph-font: 'Manrope',sans-serif;
   
-    --headline-color-on-white: #0B3C49;  /* headlines on a white background */ 
+    --headline-color-on-white: #0B3C49;
   
-    --headline-color-on-color: #FFFDFD; /* headlines on a colored background */ 
+    --headline-color-on-color: #FFFDFD;
   
-    --paragraph-color-on-white: #CBD2D0; /* paragraph text on a white background */ 
+    --paragraph-color-on-white: #CBD2D0;
   
-    --paragraph-color-on-color: #0B3C49; /* paragraph text on a colored background */ 
+    --paragraph-color-on-color: #0B3C49;
   
     --paragraph-background-color: #396E94  ;
   
@@ -34,19 +34,19 @@
   }
   
   * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
   
   header,
   nav,
   main, .links-list,
   footer {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: var(--paragraph-font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--paragraph-font);
   }
   header, h2, .card-activities, .card-information {
     font-size: 1.2rem;
@@ -56,8 +56,8 @@
   }
   
   header, nav, a {
-      color: white;
-      padding: 1rem 1rem 1rem 1rem;
+    color: white;
+    padding: 1rem 1rem 1rem 1rem;
   }
 
   header, h2 {
@@ -72,15 +72,16 @@
   }
 
   #profile {
-      width: 7rem;
-      height: 7rem;
-      margin: 1rem 1rem 1rem 1rem;
-      border-radius: 2rem;
+    width: 7rem;
+    height: 7rem;
+    margin: 1rem 1rem 1rem 1rem;
+    border-radius: 2rem;
   }
+  
   ul li {
-      display: flex;
-      flex-wrap: wrap;
-      margin:  0rem 1.2rem 0rem 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin:  0rem 1.2rem 0rem 1.2rem;
   }
 
   footer {
@@ -107,10 +108,48 @@
     margin-bottom: 3rem;
     box-shadow: 0.6rem 0.6rem 0.6rem rgba(0, 0, 0, 0.3);
   }
-  #cards {
+
+  #cards, #information {
     display: flex;
     flex-direction: column;
   }
+
+  .company-card {
+    display: flex;
+    flex-direction: column;
+    border: 0.0625rem solid black;
+    box-shadow: 0 0 0.8rem rgba(1, 1, 1, 1);
+    font-size: 1.6rem;
+  }
+
+  .company-portrait {
+    margin: 1rem;
+  }
+
+  .company-name, .company-other {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1rem;
+    background-color: var(--paragraph-background-color);
+    color: white;
+  }
+
+  .company-address, .company-phone, .company-website, .company-other {
+      margin: 0.4rem 0 0.4rem 0;
+  }
+  .company-address, .company-phone, .company-website, .company-level {
+    color: black;
+    font-weight: bold;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 0.5rem;
+  }
+
+  .company-other {
+    margin: 1rem 1.6rem 1rem 1.6rem;
+  }
+
   .card-activities {
     display: flex;
     flex-direction: column;
@@ -133,10 +172,11 @@
     grid-auto-flow: row;
     text-align: center;
     margin-top: 3rem;
+    place-items: center;
   }
 
   .card-activities li, .card-information li {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
   }
 
   #hero picture img {
@@ -147,13 +187,12 @@
     font-weight: bold;
   }
 
-  ul li {
-    display:inline-block;
-    margin:  0rem 0.5rem 0rem 0.5rem;
+  .forecast-temp {
+    margin-right: 1rem;
   }
-  ul li a{
-    text-decoration: none;
-    transition: color 1.5s ease;
+
+  .forecast-img {
+    margin-bottom: 1rem;
   }
 
   li a:hover {
@@ -184,12 +223,12 @@
   main {
     display: flex;
     flex-direction: column;
-}
+  }
   #hero {
     position: relative;
     width: 100%;
-
   }
+
   #cards {
     display: flex;
     flex-direction: column;
@@ -215,18 +254,21 @@
     font-size: 1.2rem;
     text-align: center;
   }
+
   #profile {
     width: 7rem;
     height: 7rem;
     margin: 1rem 1rem 1rem 1rem;
     border-radius: 2rem;
   }
+
   ul li {
     display: flex;
     flex-wrap: wrap;
     margin:  0rem 1.2rem 0rem 1.2rem;
     color: black;
   }
+
   .label-hero {
     position: absolute;
     top: 18%;
@@ -302,6 +344,21 @@
     .footer-bottomline p {
         font-size: 0.8rem;
     }
+    .company-card {
+      margin: 0;
+      padding: 0.5rem;
+      width: 100%;
+      font-size: 0.8rem;
+    }
+  }
+
+  @media (min-width: 21.875rem) {
+    .company-card {
+      margin: 0;
+      padding: 0.5rem;
+      width: 100%;
+      font-size: 1rem;
+    }
   }
 
   @media (min-width: 27rem) {
@@ -312,6 +369,12 @@
     }
   }
 
+  @media (max-width: 27rem) {
+    #information span{
+      font-size: 0.8rem;
+    }
+  }
+
   @media (min-width: 37rem) {
     iframe {
       margin: 2rem 0 2rem 0;
@@ -319,4 +382,20 @@
       height: 31rem;
     }
   }
-  
+
+  @media (min-width: 74rem) {
+    .company-card {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: 1rem -1rem 0rem 2rem;
+      padding: 2rem;
+      height: auto;
+      width: 95%;
+      font-size: 1.2rem;
+    }
+    .company-address, .company-phone, .company-website, .company-level {
+      margin: 1rem;
+    }
+  }

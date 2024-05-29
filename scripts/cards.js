@@ -2,7 +2,8 @@ const url = './data/links.json';
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
-const urlAPI = 'https://api.openweathermap.org/data/2.5/weather?lat=31.7&lon=106.5&units=imperial&appid=7ff796c8357d5aaa81ed1eec4088d6c4'
+const urlWeather = 'https://api.openweathermap.org/data/2.5/weather?lat=31.7&lon=-106.5&units=imperial&appid=7ff796c8357d5aaa81ed1eec4088d6c4';
+const urlForecast = 'https://api.openweathermap.org/data/2.5/forecast?lat=31.7&lon=-106.5&units=imperial&appid=7ff796c8357d5aaa81ed1eec4088d6c4';
 
 let cardActivities = document.querySelector('.card-activities');
 
@@ -39,26 +40,52 @@ async function getCourseData() {
 }
 
 async function apiFetch() {
-    try {
-      const response = await fetch(urlAPI);
-      if (response.ok) {
-        const data = await response.json();
-        console.log(data);
-        displayResults(data)
-      } else {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-    } catch (error) {
-      console.error('Error fetching weather data:', error);
+  try {
+    const weather = await fetch(urlWeather);
+    const forecast = await fetch(urlForecast);
+
+    if ((weather.ok) && (forecast.ok)) {
+      const weatherData = await weather.json();
+      const forecastData = await forecast.json();
+      console.log(weatherData);
+      console.log(forecastData);
+      displayWeather(weatherData);
+      displayForecast(forecastData);
+    } else {
+      throw new Error(`HTTP error! status: ${weather.status} ${forecast.status}`);
     }
-
+  } catch (error) {
+    console.error('Error fetching weather data:', error);
   }
+}
 
-function displayResults(data) {
-    currentTemp.innerHTML = `${data.main.temp}&deg;F`;
-    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-    weatherIcon.setAttribute('src', iconsrc);
-    captionDesc.textContent = `${data.weather[0].description}`;
+function displayWeather(data) {
+  currentTemp.innerHTML = `${data.main.temp}&deg;F`;
+  const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+  weatherIcon.setAttribute('src', iconsrc);
+  captionDesc.textContent = `${data.weather[0].description}`;
+}
+
+function displayForecast(data) {
+  const forecast = data.list.slice(2,26);
+  const forecastContainer = document.createElement('ul');
+  forecastContainer.classList.add('forecast-list');
+  forecast.forEach(dayData => {
+    const forecastItem = document.createElement('li');
+    const forecastDate = new Date(dayData.dt * 1000).toLocaleDateString();
+    const forecastTemp = `${dayData.main.temp}&deg;F`;
+    const forecastIcon = `https://openweathermap.org/img/w/${dayData.weather[0].icon}.png`;
+    const forecastDescription = `${dayData.weather[0].description}`;
+
+    forecastItem.innerHTML = `<span class="forecast-date">${forecastDate}</span>
+    <img class="forecast-img" src="${forecastIcon}" alt="Weather icon">
+    <span class="forecast-temp">${forecastTemp}</span>
+    <span class="forecast-description">${forecastDescription}</span>`;
+
+    forecastContainer.appendChild(forecastItem);
+  });
+  const information =  document.querySelector('#information');
+  information.appendChild(forecastContainer);
 }
   
 apiFetch();
