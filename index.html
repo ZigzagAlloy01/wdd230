@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Iván Salamanca">
-    <meta name="description" content="WDD 230 - Web Frontend Development Iván Salamanca course assignment portal. A portal filled with the results of many different programming activites, designed to provide other people with templates to work with HTML, CSS and JS.">
+    <meta name="description" content="WDD 230 - Web Frontend Development Iván Salamanca course assignment portal. This is an enhanced home page for a Chamber of Commerce website. It incorporates various functionalities to provide a more engaging and informative experience for visitors.">
     <meta property="og:title" content="Iván Salamanca - WDD 230 - Web Frontend Development"/>
     <meta property="og:type" content="website"/>
     <meta property="og:image" content="https://ibb.co/QbLpGq2"/>
@@ -41,6 +41,10 @@
                 <img src="week03/images/houstonTempleLarge.webp" alt="table setting" width="1500" height="750" loading="lazy">
             </picture>
         </div>
+        <div id="banner">
+            <span>Join us at the Chamber of Commerce Meet and Greet this Wednesday at 19:00!</span>
+            <span id="closeButton">❌</span>
+        </div>
         <div id="company"></div>
         <div id="cards">
             <section class="card-activities">
@@ -59,7 +63,6 @@
                     <div id="information"></div>
                     <li><p><span class="label">Number of Visits: </span><span class="visits"></span></p></li>
                 </ul>
-                
             </section>
         </div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11748.024517115331!2d-106.44230621435052!3d31.744013301551924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1715445648549!5m2!1ses-419!2smx" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -83,6 +86,7 @@
     </footer>
     <script src="scripts/index.js"></script>
     <script src="scripts/cards.js"></script>
+    <script src="scripts/banner.js"></script>
     <script src="scripts/randomCompany.js"></script>
 </body>
 </html>

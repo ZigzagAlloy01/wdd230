@@ -1,36 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Poppins:wght@200&display=swap');
 
 :root {
-    --primary-color: #0B3C49;
+    --primary-color: black;
   
-    --secondary-color: #731963;
-  
-    --accent1-color: #FFFDFD;
-  
-    --accent2-color: #CBD2D0;
+    --secondary-color: white;
   
     --heading-font: 'Poppins', sans-serif;
   
     --paragraph-font: 'Manrope',sans-serif;
   
-    --headline-color-on-white: #0B3C49;
+    --banner-background: #FFFDFD;
   
-    --headline-color-on-color: #FFFDFD;
-  
-    --paragraph-color-on-white: #CBD2D0;
-  
-    --paragraph-color-on-color: #0B3C49;
-  
-    --paragraph-background-color: #396E94  ;
-  
-    --nav-link-color: #731963;
+    --paragraph-background-color: #396E94;
   
     --nav-background-color: rgb(30, 30, 134);
   
-    --nav-hover-link-color: #FFFDFD;
-  
-    --nav-hover-background-color: #731963;
-  
+    --nav-hover-link-color: orange;
   }
   
   * {
@@ -56,7 +41,7 @@
   }
   
   header, nav, a {
-    color: white;
+    color: var(--secondary-color);
     padding: 1rem 1rem 1rem 1rem;
   }
 
@@ -91,7 +76,7 @@
     text-align: center;
     font-size: 1.2rem;
     padding: 2rem 0 3rem 0;
-    color: white;
+    color: var(--secondary-color);
   }
 
   h1 {
@@ -103,8 +88,8 @@
   }
 
   section {
-    border: solid 0.1rem black;
-    color: white;
+    border: solid 0.1rem var(--primary-color);
+    color: var(--secondary-color);
     margin-bottom: 3rem;
     box-shadow: 0.6rem 0.6rem 0.6rem rgba(0, 0, 0, 0.3);
   }
@@ -117,7 +102,7 @@
   .company-card {
     display: flex;
     flex-direction: column;
-    border: 0.0625rem solid black;
+    border: 0.0625rem solid var(--primary-color);
     box-shadow: 0 0 0.8rem rgba(1, 1, 1, 1);
     font-size: 1.6rem;
   }
@@ -132,16 +117,16 @@
     flex-wrap: wrap;
     padding: 1rem;
     background-color: var(--paragraph-background-color);
-    color: white;
+    color: var(--secondary-color);
   }
 
   .company-address, .company-phone, .company-website, .company-other {
       margin: 0.4rem 0 0.4rem 0;
   }
   .company-address, .company-phone, .company-website, .company-level {
-    color: black;
+    color: var(--primary-color);
     font-weight: bold;
-    background-color: #fff;
+    background-color: var(--banner-background);
     border-radius: 1rem;
     padding: 0.5rem;
   }
@@ -196,7 +181,7 @@
   }
 
   li a:hover {
-    background-color:  orange;
+    background-color: var(--nav-hover-link-color);
   }
 
   #profile {
@@ -207,7 +192,7 @@
   }
   
   nav {
-    background-color: black;
+    background-color: var(--primary-color);
     font-size: 2rem;
   }
   
@@ -236,7 +221,7 @@
   .card-activities a, .card-information a {
     display: flex;
     flex-direction: column;
-    color: black;
+    color: var(--primary-color);
   }
 
   header, h2, .card-activities, .card-information {
@@ -247,7 +232,7 @@
   }
 
   h2 {
-    color: white;
+    color: var(--secondary-color);
   }
 
   nav, span {
@@ -266,14 +251,14 @@
     display: flex;
     flex-wrap: wrap;
     margin:  0rem 1.2rem 0rem 1.2rem;
-    color: black;
+    color: var(--primary-color);
   }
 
   .label-hero {
     position: absolute;
     top: 18%;
     left: 9%;
-    color: black;
+    color: var(--primary-color);
     font-weight: bolder;
     background: radial-gradient(#fff, #4D5B97);
     border: 0.1rem solid rgba(0,0,0,.75);
@@ -326,6 +311,23 @@
     margin-top: 1rem;
     font-family: var(--heading-font);
     font-weight: bolder;
+  }
+
+  #banner {
+    background-color: var(--banner-background);
+    margin: 1rem;
+    padding: 1rem;
+    font-weight: bold;
+    display: none;
+  }
+
+  #banner.show {
+    display: block;
+  }
+
+  #closeButton {
+    float: right;
+    cursor: pointer;
   }
 
   @media (max-width: 21.875rem) {

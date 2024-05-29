@@ -1,4 +1,4 @@
-const members = './chamber/data/members.json';
+const members = './chamber/data/gold_silver_members.json';
 const cards = document.querySelector('#company');
 
 async function getCompaniesData() {
@@ -6,7 +6,9 @@ async function getCompaniesData() {
   const data = await response.json();
   /*console.table(data);*/
   const randomCompany = getRandomCompany(data.companies);
+  const anotherCompany = getRandomCompany(data.companies);
   displayCompany(randomCompany);
+  displayCompany(anotherCompany);
 }
 
 function getRandomCompany(companies) {
