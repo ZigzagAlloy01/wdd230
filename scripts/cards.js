@@ -67,7 +67,7 @@ function displayWeather(data) {
 }
 
 function displayForecast(data) {
-  const forecast = data.list.slice(2,26);
+  const forecast = data.list.slice(2,35);
   const forecastContainer = document.createElement('ul');
   forecastContainer.classList.add('forecast-list');
   forecast.forEach(dayData => {

@@ -7,7 +7,7 @@
 
     --header-background-color: #243b58;
 
-    --navigation-background-color: #552568;
+    --navigation-background-color: rgb(48, 48, 189);
 
     --header-size: 1.5rem;
 
@@ -70,6 +70,15 @@
     font-family: var(--heading-font);
   }
 
+  #h1-main {
+    font-size: 1.6rem;
+    color: black;
+    text-align: left;
+    margin: 1rem;
+    font-family: var(--heading-font);
+    font-weight: bolder;
+  }
+
   #background-image {
     width: 100%;
     height: auto;
@@ -94,8 +103,8 @@
 
   #facebook-logo, #instagram-logo {
     border-radius: 4rem;
-    width: 2rem;
-    height: 2rem;
+    width: 3rem;
+    height: 3rem;
     margin-top: 1rem;
   }
   
@@ -268,6 +277,7 @@
     padding:  0.6rem 0.6rem 0.6rem 0.6rem;
     background-color: var(--primary-color);
     border-radius: 25%;
+    min-height: 3rem;
     box-shadow: 0.4rem 0.4rem 0.6rem rgba(0.2, 0.2, 0.2, 0.5);
   }
 
@@ -282,15 +292,16 @@
     padding:  0.6rem 0.6rem 0.6rem 0.6rem;
     background-color: var(--primary-color);
     border-radius: 25%;
+    min-height: 3rem;
     box-shadow: 0.4rem 0.4rem 0.6rem rgba(0.2, 0.2, 0.2, 0.5);
   }
 
   #main-content {
-      display: grid;
-      grid-template-columns: repeat(20, 1fr);
-      grid-template-rows: repeat(6, 1fr);
-      font-family: var(--paragraph-font);
-      width: 90%;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    font-family: var(--paragraph-font);
+    width: 90%;
   }
 
   .events, .weather, .bioinformatics, .materials, .vaccines, .energy {
@@ -305,7 +316,7 @@
   }
   #sidebar {
     display: grid;
-    top: -4rem;
+    top: -1.5rem;
     left: 1rem;
     width: 15rem;
     height: 76hv;
@@ -375,6 +386,22 @@
   .label {
     font-family: var(--paragraph-font);
     font-weight: 700;
+  }
+
+  #pop {
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+  }
+
+  .membership-benefits {
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+  }
+  .membership-benefits p{
+    margin: 1rem;
   }
 
   @media (max-width: 36.875rem) {

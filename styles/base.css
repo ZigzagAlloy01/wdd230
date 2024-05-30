@@ -135,6 +135,10 @@
     margin: 1rem 1.6rem 1rem 1.6rem;
   }
 
+  .company-website {
+    height: 3rem;
+  }
+
   .card-activities {
     display: flex;
     flex-direction: column;
@@ -168,9 +172,6 @@
     width: 100%;
     height: auto;
   }
-  span {
-    font-weight: bold;
-  }
 
   .forecast-temp {
     margin-right: 1rem;
@@ -200,9 +201,10 @@
     position: absolute;
     top: -0.15rem;
     right: 0.90rem;
-    font-size: 3rem;
     cursor: pointer;
     font-size: 2rem;
+    width: 3rem;
+    height: 3rem;
   }
 
   main {
@@ -269,22 +271,31 @@
     font-family: var(--paragraph-font);
     opacity: 0.79;
   }
+
+  figcaption, .our-city, span {
+    font-weight: bold;
+  }
+
   .footer-topline, .footer-bottomline {
     display: flex;
     flex-direction: column;
     font-size: 1rem;
     margin-top: 3rem;
   }
+
   .footer-topline p, .footer-bottomline p {
       margin-left: 1rem;
       padding-top: 2.1rem;
   }
+
   .footer-topline p {
       font-size: 1.41rem;
   }
+
   .footer-bottomline p {
       font-size: 1rem;
   }
+
   #chamber-logo {
     display: flex;
     place-self: center;
@@ -292,21 +303,25 @@
     height: 4rem;
     margin: 0 1rem 0 1rem;
   }
+
   iframe {
     margin: 2rem 0 2rem 0;
     width: 14rem;
     height: 11rem;
   }
+
   .label {
     font-family: var(--paragraph-font);
     font-weight: 700;
   }
+
   .membership-benefits {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 2rem;
   }
+
   .membership-benefits p {
     margin-top: 1rem;
     font-family: var(--heading-font);
@@ -337,17 +352,21 @@
       margin-top: 0.3rem;
       margin-left: -0.5rem;
     }
+
     .footer-topline p, .footer-bottomline p {
         padding-top: 0.3rem;
     }
+
     .footer-topline p {
         font-size: 1.4rem;
     }
+
     .footer-bottomline p {
         font-size: 0.8rem;
     }
+
     .company-card {
-      margin: 0;
+      margin: 2rem 0 2rem 0;
       padding: 0.5rem;
       width: 100%;
       font-size: 0.8rem;
@@ -356,7 +375,7 @@
 
   @media (min-width: 21.875rem) {
     .company-card {
-      margin: 0;
+      margin: 2rem 0 2rem 0;
       padding: 0.5rem;
       width: 100%;
       font-size: 1rem;
@@ -391,12 +410,13 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      margin: 1rem -1rem 0rem 2rem;
+      margin: 2rem -1rem 2rem 2rem;
       padding: 2rem;
       height: auto;
       width: 95%;
       font-size: 1.2rem;
     }
+
     .company-address, .company-phone, .company-website, .company-level {
       margin: 1rem;
     }

@@ -1,11 +1,11 @@
 :root {
     --header-background: #f76767;
-    --nav-background: #ff9f9f;
     --li-a-background: #f70e0e;
     --li-a-color: #eee;
     --body-font-size: 1.2rem;
     --body-font-family: Verdana;
     --button-font-family: sans-serif;
+    --navigation-background-color: rgb(48, 48, 189);
 }
  * {
     box-sizing: border-box;
@@ -36,9 +36,9 @@
     display: block;
   }
   
-  h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
+  header h1 {
+    font-size: 2rem;
+    margin: 1rem;
   }
   
   
@@ -90,12 +90,8 @@
       background-color: var(--header-background);
       color: var(--li-a-color);
   }
-  header h1 {margin: 0;}
   header h2 {margin: 0; font-weight: normal;}
 
-  nav {
-      background-color: var(--nav-background);
-  }
   nav ul {
       display: flex;
       flex-direction: column;
@@ -130,9 +126,11 @@
   }
 
   footer {
-      background-color: var(--header-background);
-      padding: 0.5rem 2%;
-      text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--header-background);
+    padding: 0.5rem 2%;
+    text-align: center;
   }
 
 
@@ -291,6 +289,16 @@
     summary {
       display: list-item;
     }
+
+    #profile {
+      width: 10rem;
+      height: 10rem;
+      margin: 2rem;
+    }
+
+    .form-group label {
+      font-weight: bold;
+    }
     
     canvas {
       display: inline-block;
@@ -321,7 +329,7 @@
       margin: 6rem;
     }
     
-  @media only screen and (min-width: 39rem) {
+  @media only screen and (min-width: 44.375rem) {
 
           nav ul {
               display: flex;
@@ -331,7 +339,45 @@
           }
           nav ul li {border: none;}
           nav ul li a{padding: 0.5rem 2rem;}
-          nav ul li a:hover {background-color: firebrick;}
+          nav ul li a:hover {background-color: firebrick;
+          }
+          h2 {
+            font-size: 2rem;
+            text-align: center;
+            }
+        
+            #menu, .navigation {
+            display: none; 
+            }
+        
+            .navigation {
+                display: none;
+            }
+    
+            .navigation-largesize {
+                display: flex;
+                flex-direction: row;
+                list-style: none;
+                color: #fff;
+                font-size: 0.9rem;
+                margin: 0 1rem 0 1rem;
+            }
+            
+            .navigation-largesize a {
+                display: block;
+                flex: 1 1 100%;
+                min-width: 4rem;
+                min-height: 3rem;
+                margin: 1rem;
+                padding: 0.5rem;
+                text-align: center;
+                text-decoration: none;
+                color: #fff;
+            }
+            .navigation-largesize a:hover {
+                background-color: var(--nav-hover-background-color);
+                font-weight: 700;
+            }
       }
 
   @media only screen and (min-width: 64rem) {

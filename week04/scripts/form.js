@@ -31,7 +31,7 @@ form.addEventListener('submit', function(event) {
     document.getElementById('password').focus();
     return false;
     }
-    window.location.href = 'thankyou.html';
+    window.location.href = 'thanks.html';
     alert('Form submitted successfully!');
 });
 

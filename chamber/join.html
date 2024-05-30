@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Iván Salamanca">
     <meta name="description" content="WDD 230 - Web Frontend Development Iván Salamanca course assignment portal. A portal designed as a form, for the people who wants to join the chamber of commerce.">
@@ -10,18 +10,24 @@
     <meta property="og:image" content="https://ibb.co/QbLpGq2"/>
     <meta property="og:url" content="https://zigzagalloy01.github.io/wdd230/"/>
     <title>CC - Join Us</title>
-    <link rel="stylesheet" type="text/css" href="../styles/custom-normalize.css">
-    <link rel="stylesheet" type="text/css" href="../styles/base.css">
-    <link rel="stylesheet" type="text/css" href="../styles/large.css">
-    <link rel="stylesheet" type="text/css" href="../styles/form.css">
-    <link rel="icon" href="../images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../week04/styles/form.css">
+    <link rel="stylesheet" type="text/css" href="styles/custom-normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/large.css">
+    <link rel="icon" href="favicon.ico">
 </head>
 <body>
     <header>
         <img id="profile" src="images/cc.webp" alt="Chamber logo" loading="lazy">
         <h1>Join Us</h1>
+        <nav class="navigation-largesize">
+            <a href="index.html" title="Home">Home</a>
+            <a href="discover.html" title="About Us" class="active">Discover</a>
+            <a href="directory.html" title="Service">Directory</a>
+            <a href="join.html" title="History">Join</a>
+        </nav>
     </header>
-    <nav>
+    <nav class="navigation">
         <ul>
             <li><a href="index.html" title="Home">Home</a></li>
             <li class="active"><a href="discover.html" title="About Us" class="active">Discover</a></li>
@@ -30,7 +36,8 @@
         </ul>
     </nav>
     <main>
-        <h1 id="h1-main">Join our Chamber</h1>
+        <button id="menu"></button>
+        <h2 id="h1-main">Join our Chamber</h2>
         <form id="myForm" method="post" action="thankyou.html">
             <fieldset>
                 <legend>Applicant Information</legend>
@@ -123,8 +130,10 @@
             <p>México</p>
             <p> | </p>
             <p>WDD 230 Project</p>
+            <p> | </p>
+            <p id="last-modified">Last modification: </p>
         </div>
     </footer>
-    <script src="../scripts/form.js"></script>
+    <script src="scripts/form.js"></script>
 </body>
 </html>

@@ -7,7 +7,7 @@
 
     --header-background-color: #243b58;
 
-    --navigation-background-color: #552568;
+    --navigation-background-color: rgb(48, 48, 189);
 
     --header-size: 1.5rem;
 
@@ -34,7 +34,7 @@
         }
     }
 
-    @media (min-width: 50.43rem) {
+    @media (min-width: 44.375rem) {
 
         #chamber-logo {
             width: 5rem;
@@ -67,6 +67,9 @@
         .navigation-largesize a {
             display: block;
             flex: 1 1 100%;
+            min-width: 4rem;
+            min-height: 3rem;
+            margin: 1rem;
             padding: 0.5rem;
             text-align: center;
             text-decoration: none;
@@ -96,15 +99,15 @@
         }
         .events, .weather, .bioinformatics, .materials, .vaccines, .energy {
             grid-column: 10/21;
-            font-size: 1.8rem;
+            font-size: 1.2rem;
         }
 
         #sidebar {
             display: show;
             position: fixed;
-            top: -4rem;
+            top: -1.5rem;
             left: 1rem;
-            width: 20rem;
+            width: 18rem;
             height: 65hv;
             color: white;
             background-color: #007ee6;
@@ -124,12 +127,12 @@
         }
         iframe {
             margin: 2rem 0 1rem 0;
-            width: 18.7rem;
+            width: 16rem;
             height: 11rem;
           }
     }
 
-    @media (min-width: 64rem) {
+    @media (min-width: 76.56rem) {
         header {
             font-size: 2.2rem;
         }
@@ -142,16 +145,17 @@
             margin: 0 1.5rem 0 2rem;
         }
         .navigation-largesize {
-            margin: 0 2rem 0 9rem;
+            margin: 0 1rem 0 1rem;
             font-size: 1.5rem;
+        }
+        .navigation-largesize a {
+            width: 10rem;
         }
         #social-media-logos {
             flex-direction: row;
         }
         #facebook-logo, #instagram-logo {
             border-radius: 4rem;
-            width: 3rem;
-            height: 3rem;
             margin: 1rem 1rem 0 1rem;
         }
  
@@ -175,10 +179,8 @@
         }
         .events, .weather, .bioinformatics, .materials, .vaccines, .energy {
             grid-column: 8/21;
-            font-size: 2rem;
             margin-right: 1.5rem;
         }
-
         .smaller {
             font-size: 1rem;
         }
