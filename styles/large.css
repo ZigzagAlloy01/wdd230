@@ -1,12 +1,12 @@
 @media (min-width: 48rem) {
     footer {
-      display: grid;
-      grid-auto-flow: row;
+      display: flex;
       background-color: var(--nav-background-color);
       text-align: center;
       font-size: 1.8rem;
       padding: 2rem 0 3rem 0;
       color: white;
+      height: auto;
     }
   
     h1 {
@@ -122,7 +122,8 @@
     } 
     .footer-topline, .footer-bottomline {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      height: 7rem;
       font-size: 1rem;
       margin-top: 3rem;
     }
@@ -225,5 +226,9 @@
     h1 {
       margin: 1.2rem 0 1.2rem 0;
       font-size: 1.8rem;
+    }
+    #hero picture {
+      width: 60rem;
+      height: 37.5rem;
     }
   }

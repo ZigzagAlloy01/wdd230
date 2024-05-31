@@ -34,5 +34,16 @@ function updateVisits() {
 	localStorage.setItem("numVisits-ls", numVisits);
 }
 
+$(document).ready(function() {
+	$(".week").each(function() {
+		$(this).prepend("<button class='toggle-button'>Open/Close</button>");
+		$(this).find("ul").hide();
+		$(this).find(".toggle-button").click(function() {
+			$(this).siblings("ul").slideToggle();
+			$(this).text($(this).siblings("ul").is(":visible") ? "☰" : "☰");
+		});
+	});
+});
+
 updateLastModified();
 updateVisits();

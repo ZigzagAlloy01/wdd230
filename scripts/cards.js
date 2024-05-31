@@ -13,8 +13,8 @@ async function getCourseData() {
   data.weeks.forEach((week) => {
     const weekSection = document.createElement('section');
     weekSection.classList.add('week');
-
     const weekTitle = document.createElement('h2');
+    weekTitle.classList.add('week-title');
     weekTitle.textContent = week.week;
     weekSection.appendChild(weekTitle);
 

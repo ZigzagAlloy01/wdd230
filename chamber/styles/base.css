@@ -38,6 +38,11 @@
       font-family: var(--paragraph-font);
   }
 
+  header {
+    width: 100%;
+    height: 12.83rem;
+  }
+
   header, footer {
     background-color: var(--header-background-color);
     color: var(--secondary-color);
@@ -46,6 +51,7 @@
     padding: 2rem 0 2rem 0rem;
     text-align: center;
   }
+
   header h1{
     font-size: var(--header-size);
   }
@@ -90,9 +96,9 @@
   }
 
   #chamber-logo {
-    width: 4rem;
-    height: 4rem;
-    margin: 0 1rem 0 1rem;
+    width: 5rem;
+    height: 5rem;
+    margin: 2rem;
   }
 
   #social-media-logos {
@@ -128,11 +134,11 @@
   }
 
   .menu {
-	margin: 1rem;
-	border: 0.0625rem solid rgba(0, 0, 0, 0.1);
-	padding: 0.5rem;
-	background-color: #bed;
-	text-align: center;
+    margin: 1rem;
+    border: 0.0625rem solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: #bed;
+    text-align: center;
   }
 
   .menu button {
@@ -171,18 +177,18 @@
   }
 
   .company-name, .company-other {
-      flex-direction: column;
-      flex-wrap: wrap;
-      padding: 1rem;
-      background-color: var(--container-background);
-      color: var(--secondary-color);
-      font-size: 1.6rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1rem;
+    background-color: var(--container-background);
+    color: var(--secondary-color);
+    font-size: 1.6rem;
   }
 
   .company-address, .company-phone, .company-website, .company-other {
-      font-size: 0.8rem;
-      font-weight: bold;
-      margin: 0.4rem 0 0.4rem 0;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin: 0.4rem 0 0.4rem 0;
   }
 
   .company-other {
@@ -258,12 +264,12 @@
   }
 
   #background-section {
-      display: grid;
-      position: relative;
-      place-items: center;
-      width: 100%;
-      height: auto;
-      margin: 0;
+    display: grid;
+    position: relative;
+    place-items: center;
+    width: 100%;
+    height: auto;
+    margin: 0;
   }
 
   #join {
@@ -386,6 +392,7 @@
   .label {
     font-family: var(--paragraph-font);
     font-weight: 700;
+    margin-top: 5rem;
   }
 
   #pop {

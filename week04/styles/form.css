@@ -86,11 +86,22 @@
   }
 
   header {
-      padding: .5rem 2%;
-      background-color: var(--header-background);
-      color: var(--li-a-color);
+    width: 100%;
+    height: 12.83rem;
   }
-  header h2 {margin: 0; font-weight: normal;}
+
+  header, footer {
+    background-color: var(--header-background-color);
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: var(--header-size);
+    padding: 2rem 0 2rem 0rem;
+    text-align: center;
+  }
+
+  header h2 {
+    margin: 0; font-weight: normal;
+  }
 
   nav ul {
       display: flex;
@@ -100,24 +111,10 @@
       padding: 0;
       margin: 0;
   }
+
   nav ul li {
     display: flex;
-    border-bottom: solid 0.0625rem #333;
     place-items: center;
-  }
-  nav ul li a {
-      display: block;
-      background-color: var(--li-a-background);
-      color: var(--li-a-color);
-      padding: .5rem 0;
-      text-decoration: none;
-      font-size: .9rem;
-      text-align: center;
-      margin-top: 2rem;
-  }
-  nav ul li.active a {
-      background-color: #000;
-      color: var(--li-a-color);
   }
 
   main {
@@ -128,11 +125,8 @@
   footer {
     display: flex;
     flex-direction: column;
-    background-color: var(--header-background);
     padding: 0.5rem 2%;
-    text-align: center;
   }
-
 
     code,
     kbd,
@@ -209,13 +203,6 @@
       text-transform: none;
     }
     
-    button,
-    html [type="button"],  
-    [type="reset"],
-    [type="submit"] {
-      -webkit-appearance: button;  
-    }
-    
     button::-moz-focus-inner,
     [type="button"]::-moz-focus-inner,
     [type="reset"]::-moz-focus-inner,
@@ -266,11 +253,6 @@
       height: auto;
     }
     
-    [type="search"] {
-      -webkit-appearance: textfield;
-      outline-offset: -0.125rem;
-    }
-    
     [type="search"]::-webkit-search-cancel-button,
     [type="search"]::-webkit-search-decoration {
       -webkit-appearance: none;
@@ -291,8 +273,8 @@
     }
 
     #profile {
-      width: 10rem;
-      height: 10rem;
+      width: 5rem;
+      height: 5rem;
       margin: 2rem;
     }
 
@@ -331,64 +313,59 @@
     
   @media only screen and (min-width: 44.375rem) {
 
-          nav ul {
-              display: flex;
-              flex-direction: row;
-              place-content: center;
-              margin-left: 2%;
-          }
-          nav ul li {border: none;}
-          nav ul li a{padding: 0.5rem 2rem;}
-          nav ul li a:hover {background-color: firebrick;
-          }
-          h2 {
-            font-size: 2rem;
-            text-align: center;
-            }
-        
-            #menu, .navigation {
-            display: none; 
-            }
-        
-            .navigation {
-                display: none;
-            }
+      nav ul {
+          display: flex;
+          flex-direction: row;
+          place-content: center;
+          margin-left: 2%;
+      }
+      nav ul li {border: none;}
+      nav ul li a{padding: 0.5rem 2rem;}
+      nav ul li a:hover {background-color: firebrick;
+      }
+      h2 {
+        font-size: 2rem;
+        text-align: center;
+        }
     
-            .navigation-largesize {
-                display: flex;
-                flex-direction: row;
-                list-style: none;
-                color: #fff;
-                font-size: 0.9rem;
-                margin: 0 1rem 0 1rem;
-            }
-            
-            .navigation-largesize a {
-                display: block;
-                flex: 1 1 100%;
-                min-width: 4rem;
-                min-height: 3rem;
-                margin: 1rem;
-                padding: 0.5rem;
-                text-align: center;
-                text-decoration: none;
-                color: #fff;
-            }
-            .navigation-largesize a:hover {
-                background-color: var(--nav-hover-background-color);
-                font-weight: 700;
-            }
+        #menu, .navigation {
+        display: none; 
+        }
+    
+        .navigation {
+            display: none;
+        }
+
+        .navigation-largesize {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            color: #fff;
+            font-size: 0.9rem;
+            margin: 0 1rem 0 1rem;
+        }
+        
+        .navigation-largesize a {
+            display: block;
+            flex: 1 1 100%;
+            min-width: 4rem;
+            min-height: 3rem;
+            margin: 1rem;
+            padding: 0.5rem;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+        }
+        .navigation-largesize a:hover {
+            background-color: var(--nav-hover-background-color);
+            font-weight: 700;
+        }
       }
 
   @media only screen and (min-width: 64rem) {
 
-      header, nav, main {
+      nav, main {
           max-width: 64rem;
           margin:auto;
       }
-      footer {
-          max-width: 64rem;
-          margin:auto;
-      }
-
   } 

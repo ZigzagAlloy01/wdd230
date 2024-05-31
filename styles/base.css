@@ -70,11 +70,11 @@
   }
 
   footer {
-    display: flex;
     flex-direction: column;
+    height: auto;
     background-color: var(--nav-background-color);
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 2rem 0 3rem 0;
     color: var(--secondary-color);
   }
@@ -173,6 +173,19 @@
     height: auto;
   }
 
+  .weather-container {
+    width: 20rem;
+    height: 48rem;
+    background-color: #f0f0f0;
+    overflow-y: scroll;
+    border-radius: 0.4rem; 
+  }
+  .forecast-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
   .forecast-temp {
     margin-right: 1rem;
   }
@@ -184,6 +197,13 @@
   li a:hover {
     background-color: var(--nav-hover-link-color);
   }
+  .toggle-button {
+    background-color: var(--nav-background-color);
+    border: 0.0625rem solid var(--nav-background-color); 
+    padding: 1rem;
+    cursor: pointer;
+    color: var(--secondary-color);
+  }
 
   #profile {
     width: 10rem;
@@ -194,9 +214,14 @@
   
   nav {
     background-color: var(--primary-color);
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
-  
+
+  nav ul li {
+    justify-content: center;
+    align-items: center;
+  }
+
   #mode {
     position: absolute;
     top: -0.15rem;
@@ -237,7 +262,7 @@
     color: var(--secondary-color);
   }
 
-  nav, span {
+  span {
     font-size: 1.2rem;
     text-align: center;
   }
@@ -279,13 +304,13 @@
   .footer-topline, .footer-bottomline {
     display: flex;
     flex-direction: column;
+    height: auto;
     font-size: 1rem;
-    margin-top: 3rem;
   }
 
   .footer-topline p, .footer-bottomline p {
       margin-left: 1rem;
-      padding-top: 2.1rem;
+      padding-top: 1rem;
   }
 
   .footer-topline p {
