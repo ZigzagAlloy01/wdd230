@@ -5,8 +5,8 @@
     
     --secondary-color: #FFFFFF;
 
-    --header-background-color: #243b58;
-
+    --header-background-color: #005AA4;
+    
     --navigation-background-color: rgb(48, 48, 189);
 
     --header-size: 1.5rem;
@@ -409,6 +409,10 @@
   }
   .membership-benefits p{
     margin: 1rem;
+  }
+
+  .form-group label {
+    margin: 0.8rem;
   }
 
   @media (max-width: 36.875rem) {

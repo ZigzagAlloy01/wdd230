@@ -13,13 +13,17 @@ async function getCourseData() {
   data.weeks.forEach((week) => {
     const weekSection = document.createElement('section');
     weekSection.classList.add('week');
+    const toggleButton = document.createElement('button');
+    toggleButton.classList.add('toggle-button');
+    toggleButton.textContent = 'Open/Close';
+    weekSection.appendChild(toggleButton);
     const weekTitle = document.createElement('h2');
     weekTitle.classList.add('week-title');
     weekTitle.textContent = week.week;
     weekSection.appendChild(weekTitle);
-
     const linksList = document.createElement('ul');
     linksList.classList.add('links-list');
+    weekSection.appendChild(linksList);
 
     week.links.forEach((link) => {
       const linkItem = document.createElement('li');
@@ -34,7 +38,17 @@ async function getCourseData() {
       linkItem.appendChild(linkTitle);
       linksList.appendChild(linkItem);
     });
-    weekSection.appendChild(linksList);
+    linksList.style.display = 'none';
+      toggleButton.addEventListener('click', () => {
+        if (linksList.style.display === 'none') {
+          linksList.style.display = 'block';
+          toggleButton.textContent = 'Hide';
+        } else {
+          linksList.style.display = 'none';
+          toggleButton.textContent = 'Open/Close';
+        }
+      });
+
     cardActivities.appendChild(weekSection);
   });
 }
@@ -87,9 +101,10 @@ function displayForecast(data) {
   const information =  document.querySelector('#information');
   information.appendChild(forecastContainer);
 }
-  
+
 apiFetch();
 getCourseData();
+
 
 /*
 https://openweathermap.org/
